@@ -1,3 +1,14 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  {
+    path: '',
+    pathMatch: 'prefix',
+    loadComponent: () => import('./component/shared/ui/home/home').then((c) => c.Home),
+  },
+  {
+    path: 'kanban',
+    pathMatch: 'prefix',
+    loadComponent: () => import('./component/board/board/board').then((c) => c.Board),
+  },
+];

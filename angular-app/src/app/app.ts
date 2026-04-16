@@ -1,13 +1,11 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Board } from "./component/board/board/board";
+import { Header } from './component/shared/ui/header/header';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Board],
+  imports: [RouterOutlet, Header],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
-export class App {
-  
-}
+export class App {}
