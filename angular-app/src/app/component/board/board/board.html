@@ -1,0 +1,16 @@
+<div class="kanban-board">
+  @for (col of columnList; track $index) {
+    <div class="kanban-column">
+      <h3>{{ col }}</h3>
+      @for (item of items().filter((t) => t.column === col); track item.id) {
+        <app-task-card
+          [task]="item"
+          (moveLeft)="onTaskMoveLeft(item)"
+          (moveRight)="onTaskMoveRight(item)"
+          (delete)="onTaskDelete(item)"
+        >
+        </app-task-card>
+      }
+    </div>
+  }
+</div>
