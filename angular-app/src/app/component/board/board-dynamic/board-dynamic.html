@@ -1,0 +1,32 @@
+<div class="add-task-container">
+  <mat-form-field>
+    <mat-label>Enter task title</mat-label>
+    <input matInput #input placeholder="Ex. Title" (input)="onInput($event)" [value]="value()" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Select priority</mat-label>
+    <mat-select [(value)]="selectedPriority">
+      <mat-option value="high">High</mat-option>
+      <mat-option value="medium">Medium</mat-option>
+      <mat-option value="low">Low</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button type="button" matButton="tonal" (click)="onSubmit()">Submit</button>
+</div>
+<div class="kanban-board">
+  @for (col of columnList; track $index) {
+    <div class="kanban-column">
+      <h3>{{ col }}</h3>
+      @for (item of items().filter((t) => t.column === col); track item.id) {
+        <app-task-card
+          [task]="item"
+          (moveLeft)="onTaskMoveLeft(item)"
+          (moveRight)="onTaskMoveRight(item)"
+          (delete)="onTaskDelete(item)"
+        >
+        </app-task-card>
+      }
+    </div>
+  }
+</div>

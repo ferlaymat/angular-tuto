@@ -11,4 +11,10 @@ export const routes: Routes = [
     pathMatch: 'prefix',
     loadComponent: () => import('./component/board/board/board').then((c) => c.Board),
   },
+  {
+    path: 'kanband',
+    pathMatch: 'prefix',
+    loadComponent: () =>
+      import('./component/board/board-dynamic/board-dynamic').then((c) => c.BoardDynamic),
+  },
 ];

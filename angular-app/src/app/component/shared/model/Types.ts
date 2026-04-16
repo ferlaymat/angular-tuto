@@ -6,8 +6,10 @@ export class Task {
   column: string;
   priority: Priority;
 
-  constructor(title: string, column: string, priority: Priority) {
-    this.id = Date.now();
+  constructor(title: string, column: string, priority: Priority, id: number);
+  constructor(title: string, column: string, priority: Priority);
+  constructor(title: string, column: string, priority: Priority, id?: number) {
+    this.id = id ?? Date.now();
     this.title = title;
     this.column = column;
     this.priority = priority;
