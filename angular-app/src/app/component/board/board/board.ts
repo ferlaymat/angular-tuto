@@ -1,11 +1,22 @@
 import { Component, computed, signal } from '@angular/core';
-import { Task } from '../../shared/model/Types';
+import { Priority, Task } from '../../shared/model/Types';
 import { MatTableModule } from '@angular/material/table';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatButtonModule } from '@angular/material/button';
 import { TaskCard } from '../../taskcard/task-card/task-card';
 
 @Component({
   selector: 'app-board',
-  imports: [MatTableModule, TaskCard],
+  imports: [
+    MatTableModule,
+    TaskCard,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatButtonModule,
+  ],
   templateUrl: './board.html',
   styleUrl: './board.css',
 })
@@ -17,6 +28,13 @@ export class Board {
     { id: 2, title: 'Add state', column: 'In progress', priority: 'high' },
     { id: 3, title: 'Connect API', column: 'To-do', priority: 'medium' },
   ]);
+
+  protected readonly value = signal('');
+  protected selectedPriority = signal<Priority>('medium');
+
+  protected onInput(event: Event) {
+    this.value.set((event.target as HTMLInputElement).value);
+  }
 
   //create a dynamic filter to avoid to iterate in full list on each column
   getTasksByColumn(column: string) {
@@ -40,5 +58,14 @@ export class Board {
   //handle the add event
   onTaskDelete(task: Task) {
     this.items.update((currentItems) => currentItems.filter((t) => t.id !== task.id));
+  }
+
+  onSubmit() {
+    const t = new Task(this.value(), 'To-do', this.selectedPriority());
+    this.items.update((values) => {
+      return [...values, t];
+    });
+    this.value.set('');
+    this.selectedPriority.set('medium');
   }
 }
