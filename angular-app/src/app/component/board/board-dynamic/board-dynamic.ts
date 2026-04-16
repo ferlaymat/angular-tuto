@@ -1,4 +1,4 @@
-import { Component, computed, effect, inject, signal } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { Priority, Task } from '../../shared/model/Types';
 import { MatTableModule } from '@angular/material/table';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -6,10 +6,11 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { TaskCard } from '../../taskcard/task-card/task-card';
-import { LocalStorageService } from '../../shared/service/local-storage-service';
+import { HttpTaskService } from '../../shared/service/http-task-service';
+import { catchError } from 'rxjs';
 
 @Component({
-  selector: 'app-board',
+  selector: 'app-board-dynamic',
   imports: [
     MatTableModule,
     TaskCard,
@@ -18,36 +19,30 @@ import { LocalStorageService } from '../../shared/service/local-storage-service'
     MatSelectModule,
     MatButtonModule,
   ],
-  templateUrl: './board.html',
-  styleUrl: './board.css',
+  templateUrl: './board-dynamic.html',
+  styleUrl: './board-dynamic.css',
 })
-export class Board {
-  private readonly STORAGE_KEY = 'kanban-tasks';
-  //fake data to initialize the board
+export class BoardDynamic {
   protected readonly columnList = ['To-do', 'In progress', 'Done'];
   items = signal<Task[]>([]);
 
   protected readonly value = signal('');
   protected selectedPriority = signal<Priority>('medium');
 
-  constructor(private localStorageService: LocalStorageService) {
-    // load data at init component
-    const savedTasks = this.localStorageService.loadTasks(this.STORAGE_KEY);
-    if (savedTasks.length > 0) {
-      this.items.set(savedTasks);
-    } else {
-      this.items.set([
-        { id: 1, title: 'Create structure', column: 'Done', priority: 'high' },
-        { id: 2, title: 'Add state', column: 'In progress', priority: 'high' },
-        { id: 3, title: 'Connect API', column: 'To-do', priority: 'medium' },
-      ]);
-    }
+  protected readonly httpService = inject(HttpTaskService);
 
-    // Save automatically at each items data changes
-    effect(() => {
-      this.items(); // call effect when items changes
-      this.localStorageService.saveTasks(this.items(), this.STORAGE_KEY);
-    });
+  constructor() {
+    this.httpService
+      .getAllTask()
+      .pipe(
+        catchError((err) => {
+          console.log(err);
+          throw err;
+        }),
+      )
+      .subscribe((data) => {
+        this.items.set(data);
+      });
   }
 
   protected onInput(event: Event) {
@@ -64,7 +59,15 @@ export class Board {
     const idx = this.columnList.indexOf(task.column);
     const newIdx = Math.max(0, Math.min(this.columnList.length - 1, idx - 1));
     task.column = this.columnList[newIdx];
-    this.localStorageService.saveTasks(this.items(), this.STORAGE_KEY);
+    this.httpService
+      .updateTask(task)
+      .pipe(
+        catchError((err) => {
+          console.log(err);
+          throw err;
+        }),
+      )
+      .subscribe();
   }
 
   //handle the move right event
@@ -72,19 +75,48 @@ export class Board {
     const idx = this.columnList.indexOf(task.column);
     const newIdx = Math.max(0, Math.min(this.columnList.length - 1, idx + 1));
     task.column = this.columnList[newIdx];
-    this.localStorageService.saveTasks(this.items(), this.STORAGE_KEY);
+    this.httpService
+      .updateTask(task)
+      .pipe(
+        catchError((err) => {
+          console.log(err);
+          throw err;
+        }),
+      )
+      .subscribe();
   }
 
   //handle the add event
   onTaskDelete(task: Task) {
-    this.items.update((currentItems) => currentItems.filter((t) => t.id !== task.id));
+    this.httpService
+      .deleteTask(task.id)
+      .pipe(
+        catchError((err) => {
+          console.log(err);
+          throw err;
+        }),
+      )
+      .subscribe(() => {
+        this.items.update((currentItems) => currentItems.filter((t) => t.id !== task.id));
+      });
   }
 
   onSubmit() {
-    const t = new Task(this.value(), 'To-do', this.selectedPriority());
-    this.items.update((values) => {
-      return [...values, t];
-    });
+    let t = new Task(this.value(), 'To-do', this.selectedPriority());
+    this.httpService
+      .createTask(t)
+      .pipe(
+        catchError((err) => {
+          console.log(err);
+          throw err;
+        }),
+      )
+      .subscribe((data) => {
+        this.items.update((values) => {
+          return [...values, data];
+        });
+      });
+
     this.value.set('');
     this.selectedPriority.set('medium');
   }
