@@ -1,0 +1,25 @@
+<p appHighlightAttributeDirective>directive-sample works!</p>
+<!-- myDatasource is null so this template will not be added to the DOM-->
+<ng-template appSelect let-data [appSelectSelectFrom]="myDatasource">
+  <ul>
+    @for (item of data; track $index) {
+      <li>{{ item }}</li>
+    }
+  </ul>
+</ng-template>
+
+<ng-template appSelect let-data [appSelectSelectFrom]="myDatasource2">
+  <ul>
+    @for (item of data; track $index) {
+      <li>{{ item }}</li>
+    }
+  </ul>
+</ng-template>
+
+<div *appSelect="let data; selectFrom: myDatasource3">
+  <ul>
+    @for (item of data; track $index) {
+      <li>{{ item }}</li>
+    }
+  </ul>
+</div>

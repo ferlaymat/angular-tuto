@@ -15,3 +15,7 @@ export class Task {
     this.priority = priority;
   }
 }
+
+export interface DataSource<T> {
+  load(): Promise<T>;
+}

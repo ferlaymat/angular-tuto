@@ -1,11 +1,10 @@
 import { HttpClient } from '@angular/common/http';
-import { inject, Injectable } from '@angular/core';
+import { inject, Service } from '@angular/core';
 import { Task } from '../model/Types';
 import { Observable } from 'rxjs';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Service
+//The @Service decorator is an ergonomic shorthand for @Injectable({providedIn: 'root'})
 export class HttpTaskService {
   protected readonly httpClient = inject(HttpClient);
 

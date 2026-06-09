@@ -17,4 +17,10 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./component/board/board-dynamic/board-dynamic').then((c) => c.BoardDynamic),
   },
+  {
+    path: 'directives',
+    pathMatch: 'prefix',
+    loadComponent: () =>
+      import('./component/directive-sample/directive-sample').then((c) => c.DirectiveSample),
+  },
 ];
