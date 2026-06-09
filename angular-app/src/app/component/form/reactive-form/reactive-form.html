@@ -1,0 +1,37 @@
+<input type="text" [formControl]="myControl" />
+<p>default value is: {{ myControl.value }}</p>
+
+<!-- add required for validator valid. check if the value has been set-->
+<input type="text" required [formControl]="myControlValidator" />
+<p>Valid: {{ myControlValidator.valid }}</p>
+<p>Touched: {{ myControlValidator.touched }}</p>
+<p>Dirty: {{ myControlValidator.dirty }}</p>
+<p>Value: {{ myControlValidator.value }}</p>
+
+<!-- change value at each modification -->
+<input type="text" [formControl]="myControlOnChange" />
+<p>default value is: {{ myControlOnChange.value }}</p>
+
+<!-- change value when input field loses the focus on it -->
+<input type="text" [formControl]="myControlOnBlur" />
+<p>default value is: {{ myControlOnBlur.value }}</p>
+
+<!-- Normal behaviour - set empty value because nullable is allowed-->
+<input type="text" [formControl]="myControlNoReset" />
+<button (click)="myControlNoReset.reset()">Reset</button>
+<p>default value is: {{ myControlNoReset.value }}</p>
+
+<!-- restore initial value on reset button click -->
+<input type="text" [formControl]="myControlReset" />
+<button (click)="myControlReset.reset()">Reset</button>
+<p>default value is: {{ myControlReset.value }}</p>
+
+<!-- (input)="(0)" is a hack to force to detect each change.
+ this is needed in this case because phone.value is not reactive -->
+<input #phone placeholder="phone number" (input)="(0)" />
+<p>phone number: {{ phone.value }}</p>
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+  Email in log: <input formControlName="email" />
+  <button type="submit">Submit</button>
+</form>
