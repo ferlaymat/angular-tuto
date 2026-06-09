@@ -3,7 +3,7 @@ import { inject, Service } from '@angular/core';
 import { Task } from '../model/Types';
 import { Observable } from 'rxjs';
 
-@Service
+@Service()
 //The @Service decorator is an ergonomic shorthand for @Injectable({providedIn: 'root'})
 export class HttpTaskService {
   protected readonly httpClient = inject(HttpClient);
