@@ -24,6 +24,19 @@ export const routes: Routes = [
       import('./component/board/board-dynamic/board-dynamic').then((c) => c.BoardDynamic),
   },
   {
+    path: 'signals',
+    pathMatch: 'prefix',
+    title: `${appName}Signals`,
+    loadComponent: () =>
+      import('./component/signal-samples/signal-samples').then((c) => c.SignalSamples),
+  },
+  {
+    path: 'pipes',
+    pathMatch: 'prefix',
+    title: `${appName}Pipes`,
+    loadComponent: () => import('./component/pipe-sample/pipe-sample').then((c) => c.PipeSample),
+  },
+  {
     path: 'directives',
     pathMatch: 'prefix',
     title: `${appName}Directives`,
