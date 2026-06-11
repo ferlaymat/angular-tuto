@@ -10,3 +10,7 @@ that determine group sizing and separator, decimal-point character, and other
 locale-specific configurations.-->
 <p>Total default: {{ amount | currency }}</p>
 <p>Total eur: {{ amount | currency: 'EUR' }}</p>
+
+<p>Custom pipe: {{ company | customPipe }}</p>
+<p>Custom pipe: {{ amount | customPipe }}</p>
+<p>Custom pipe: {{ undefined | customPipe }}</p>
