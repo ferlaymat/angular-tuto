@@ -1,0 +1,9 @@
+input[name="email"].ng-dirty.ng-valid{
+    border-left: 5px solid #42A948;
+    background-color: lightgreen;
+}
+
+input[name="email"].ng-dirty.ng-invalid{
+    border-left: 5px solid #A94442;
+    background-color: pink;
+}

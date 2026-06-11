@@ -1,1 +1,22 @@
 <p>home-component works!</p>
+<p>this is a simple var {{ varBinding }}</p>
+<p>this is a signal var {{ signalBinding() }}</p>
+<p>this is a standard button <button>click</button></p>
+<p>this a custom button<button cst-button>click</button></p>
+<!-- aria-label is not an standard attribute in button. It is usefull for screen reader-->
+<button [attr.aria-label]="ariaLabel()">
+  🔔
+  @if (count() > 0) {
+    <span class="badge">{{ count() }}</span>
+  }
+</button>
+
+<p>this is a 2-ways binding value: {{ firstName }}!</p>
+<!-- need to import FormModule to use ngModel-->
+<!-- need [()] to enable 2-ways binding-->
+<input name="inputName" type="text" [(ngModel)]="firstName" autocomplete="name" />
+
+<p>this is a 2-ways binding Counter: {{ initialCount }}</p>
+<!-- bniding is done between 2 components-->
+<!-- need [()] to enable 2-ways binding-->
+<app-counter [(count)]="initialCount"></app-counter>

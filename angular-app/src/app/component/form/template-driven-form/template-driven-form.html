@@ -2,6 +2,6 @@ Color: <input type="text" [(ngModel)]="favoriteColor" />
 <p>favorite color is: {{ favoriteColor() }}</p>
 
 <form #f="ngForm" (ngSubmit)="submit(f.value)">
-  Email in log: <input name="email" ngModel required />
+  Email in log: <input name="email" ngModel required email />
   <button type="submit">Submit</button>
 </form>

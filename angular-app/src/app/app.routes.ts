@@ -11,6 +11,12 @@ export const routes: Routes = [
     loadComponent: () => import('./component/shared/ui/home/home').then((c) => c.Home),
   },
   {
+    path: 'test',
+    pathMatch: 'prefix',
+    title: `${appName}Tests`,
+    loadComponent: () => import('./component/test/test/test').then((c) => c.Test),
+  },
+  {
     path: 'kanban',
     pathMatch: 'prefix',
     title: `${appName}Kanban`,
@@ -22,6 +28,19 @@ export const routes: Routes = [
     title: `${appName}Dynamic Kanban`,
     loadComponent: () =>
       import('./component/board/board-dynamic/board-dynamic').then((c) => c.BoardDynamic),
+  },
+  {
+    path: 'signals',
+    pathMatch: 'prefix',
+    title: `${appName}Signals`,
+    loadComponent: () =>
+      import('./component/signal-samples/signal-samples').then((c) => c.SignalSamples),
+  },
+  {
+    path: 'pipes',
+    pathMatch: 'prefix',
+    title: `${appName}Pipes`,
+    loadComponent: () => import('./component/pipe-sample/pipe-sample').then((c) => c.PipeSample),
   },
   {
     path: 'directives',
