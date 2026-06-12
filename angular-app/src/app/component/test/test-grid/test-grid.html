@@ -1,2 +1,18 @@
 <p>test-grid works!</p>
+@if (currentQuestion) {
+  <h2>{{ currentQuestion.category }}</h2>
+  <p>{{ currentQuestion.question }}</p>
+  @for (choice of currentQuestion.choices; track choice.id) {
+    <button>{{ choice.id }}: {{ choice.text }}</button>
+  }
+  <button
+    [ngClass]="{ done: currentQuestion.flag(), todo: !currentQuestion.flag() }"
+    (click)="flagQuestion(currentIndex)"
+  >
+    mark
+  </button>
+}
+<button (click)="previous()">Previous</button>
+<button (click)="next()">Next</button>
+<span>{{ currentIndex + 1 }} / {{ selectedQuestions.length }}</span>
 <button (click)="submit()" [disabled]="isSubmitted()">Submit</button>

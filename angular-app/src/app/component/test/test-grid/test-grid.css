@@ -1,0 +1,9 @@
+button.done{
+background-color: darkgreen;
+content: "\f067\00a0";
+}
+
+button.todo{
+background-color: darkgrey;
+content: "\f067\00a0";
+}
