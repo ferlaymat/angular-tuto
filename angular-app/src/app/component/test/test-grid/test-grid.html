@@ -1,18 +1,34 @@
-<p>test-grid works!</p>
-@if (currentQuestion) {
-  <h2>{{ currentQuestion.category }}</h2>
-  <p>{{ currentQuestion.question }}</p>
-  @for (choice of currentQuestion.choices; track choice.id) {
-    <button>{{ choice.id }}: {{ choice.text }}</button>
+<div class="quiz-wrapper">
+  @if (currentQuestion) {
+    <h2>{{ currentQuestion.category }}</h2>
+    <p>{{ currentQuestion.question }}</p>
+    <div class="choices-container">
+      @for (choice of currentQuestion.choices; track choice.id) {
+        <button
+          (click)="choose(currentQuestion.id, choice.id)"
+          [ngClass]="{ selected: choice.id === choiceMap.get(currentQuestion.id) }"
+        >
+          {{ choice.id }}: {{ choice.text }}
+        </button>
+      }
+    </div>
+    <button
+      [ngClass]="{ done: currentQuestion.flag(), todo: !currentQuestion.flag() }"
+      (click)="flagQuestion(currentIndex)"
+    >
+      mark
+    </button>
   }
-  <button
-    [ngClass]="{ done: currentQuestion.flag(), todo: !currentQuestion.flag() }"
-    (click)="flagQuestion(currentIndex)"
-  >
-    mark
-  </button>
-}
-<button (click)="previous()">Previous</button>
-<button (click)="next()">Next</button>
-<span>{{ currentIndex + 1 }} / {{ selectedQuestions.length }}</span>
-<button (click)="submit()" [disabled]="isSubmitted()">Submit</button>
+  @if (isSubmitted()) {
+    <p>score:{{ result }}/50</p>
+    @for (answer of answerList; track $index) {
+      <p [ngClass]="{ ok: answer.correct, failed: !answer.correct }">
+        question:{{ answer.question }}<br />{{ answer.answer }}
+      </p>
+    }
+  }
+  <button (click)="previous()">Previous</button>
+  <button (click)="next()">Next</button>
+  <span>{{ currentIndex + 1 }} / {{ selectedQuestions.length }}</span>
+  <button (click)="submit()" [disabled]="isSubmitted()">Submit</button>
+</div>

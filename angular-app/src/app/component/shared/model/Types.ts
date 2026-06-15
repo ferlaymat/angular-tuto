@@ -46,3 +46,9 @@ export interface QuizCategory {
 
 // full type
 export type QuizData = QuizCategory[];
+
+export interface QuestionResult {
+  correct: boolean;
+  question: string;
+  answer: string;
+}
