@@ -1,0 +1,43 @@
+button.done{
+background-color: darkgreen;
+content: "\f067\00a0";
+}
+
+button.todo{
+background-color: darkgrey;
+content: "\f067\00a0";
+}
+
+p.ok{
+    background-color: darkgrey;
+    color: green;
+}
+
+p.failed{
+    background-color: darkgrey;
+    color: red;
+}
+
+ button.selected {
+    background-color: blue;      
+    border: 2px solid darkblue;  
+    color: white;                
+  }
+
+  .choices-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .choices-container button {
+    width: fit-content;    
+    min-width: 800px;       
+    text-align: center;
+  }
+
+  .quiz-wrapper {
+  max-width: 900px;
+  margin: 40px auto;   /* centrage horizontal */
+  padding: 0 24px;
+}

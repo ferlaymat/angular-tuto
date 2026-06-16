@@ -1,3 +1,5 @@
+import { WritableSignal } from '@angular/core';
+
 export type Priority = 'high' | 'medium' | 'low';
 
 export class Task {
@@ -18,4 +20,35 @@ export class Task {
 
 export interface DataSource<T> {
   load(): Promise<T>;
+}
+
+export interface QuizChoice {
+  id: string; // 'a', 'b', 'c', 'd'
+  text: string; // answer's text
+}
+
+export interface QuizQuestion {
+  id: number;
+  question: string;
+  choices: QuizChoice[];
+  answer: string;
+}
+
+export interface QuizQuestionWithCategory extends QuizQuestion {
+  category: string;
+  flag: WritableSignal<boolean>;
+}
+
+export interface QuizCategory {
+  category: string;
+  questionList: QuizQuestion[];
+}
+
+// full type
+export type QuizData = QuizCategory[];
+
+export interface QuestionResult {
+  correct: boolean;
+  question: string;
+  answer: string;
 }

@@ -30,6 +30,12 @@ export const routes: Routes = [
       import('./component/board/board-dynamic/board-dynamic').then((c) => c.BoardDynamic),
   },
   {
+    path: 'defer',
+    pathMatch: 'prefix',
+    title: `${appName}Defer`,
+    loadComponent: () => import('./component/defer-sample/defer-sample').then((c) => c.DeferSample),
+  },
+  {
     path: 'signals',
     pathMatch: 'prefix',
     title: `${appName}Signals`,

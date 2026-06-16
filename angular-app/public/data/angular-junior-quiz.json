@@ -1,0 +1,3352 @@
+[
+  {
+    "category": "Basics of Angular",
+    "questionList": [
+      {
+        "id": 1,
+        "question": "What command is used to create a new Angular component with the CLI?",
+        "choices": [
+          { "id": "a", "text": "ng generate component" },
+          { "id": "b", "text": "ng create component" },
+          { "id": "c", "text": "ng make component" },
+          { "id": "d", "text": "ng add component" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 2,
+        "question": "What is the role of the main.ts file in an Angular application?",
+        "choices": [
+          { "id": "a", "text": "It defines the application routes" },
+          { "id": "b", "text": "It bootstraps the Angular application" },
+          { "id": "c", "text": "It contains global styles" },
+          { "id": "d", "text": "It declares components" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 3,
+        "question": "What is the main function of an Angular component?",
+        "choices": [
+          { "id": "a", "text": "Manage application routes" },
+          { "id": "b", "text": "Store application data" },
+          { "id": "c", "text": "Control a part of the user interface" },
+          { "id": "d", "text": "Manage API calls" }
+        ],
+        "answer": "c"
+      },
+      {
+        "id": 4,
+        "question": "Which file contains a component's metadata?",
+        "choices": [
+          { "id": "a", "text": "The HTML file" },
+          { "id": "b", "text": "The CSS file" },
+          { "id": "c", "text": "The TypeScript file with the @Component decorator" },
+          { "id": "d", "text": "The module.ts file" }
+        ],
+        "answer": "c"
+      },
+      {
+        "id": 5,
+        "question": "What does SPA mean in the Angular context?",
+        "choices": [
+          { "id": "a", "text": "Single Page Application" },
+          { "id": "b", "text": "Single Process Application" },
+          { "id": "c", "text": "Simple Page Architecture" },
+          { "id": "d", "text": "Secure Page Application" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 6,
+        "question": "Which command starts the Angular development server?",
+        "choices": [
+          { "id": "a", "text": "npm start" },
+          { "id": "b", "text": "ng serve" },
+          { "id": "c", "text": "ng run" },
+          { "id": "d", "text": "npm dev" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 7,
+        "question": "What is the role of the @Component decorator?",
+        "choices": [
+          { "id": "a", "text": "It creates a service" },
+          { "id": "b", "text": "It defines the component's metadata" },
+          { "id": "c", "text": "It injects dependencies" },
+          { "id": "d", "text": "It configures routes" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 8,
+        "question": "What is an Angular module (NgModule)?",
+        "choices": [
+          { "id": "a", "text": "A JavaScript file" },
+          { "id": "b", "text": "A container for grouping components, directives, and pipes" },
+          { "id": "c", "text": "A routing function" },
+          { "id": "d", "text": "A CSS style" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 9,
+        "question": "What is the role of the selector in the @Component decorator?",
+        "choices": [
+          { "id": "a", "text": "It defines the class name" },
+          { "id": "b", "text": "It defines the custom HTML tag used for the component" },
+          { "id": "c", "text": "It specifies the HTML template" },
+          { "id": "d", "text": "It imports dependencies" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 10,
+        "question": "What is bootstrapping in Angular?",
+        "choices": [
+          { "id": "a", "text": "Loading CSS styles" },
+          { "id": "b", "text": "Initializing and starting the Angular application" },
+          { "id": "c", "text": "Creating unit tests" },
+          { "id": "d", "text": "Compiling components" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 11,
+        "question": "What is the file extension of a component's template?",
+        "choices": [
+          { "id": "a", "text": ".ts" },
+          { "id": "b", "text": ".js" },
+          { "id": "c", "text": ".html" },
+          { "id": "d", "text": ".css" }
+        ],
+        "answer": "c"
+      },
+      {
+        "id": 12,
+        "question": "Which lifecycle method is called right after the component is displayed?",
+        "choices": [
+          { "id": "a", "text": "ngOnInit" },
+          { "id": "b", "text": "ngAfterContentInit" },
+          { "id": "c", "text": "ngAfterViewInit" },
+          { "id": "d", "text": "ngOnDestroy" }
+        ],
+        "answer": "c"
+      },
+      {
+        "id": 13,
+        "question": "What is data binding in Angular?",
+        "choices": [
+          { "id": "a", "text": "A data storage method" },
+          { "id": "b", "text": "Automatic synchronization of data between template and class" },
+          { "id": "c", "text": "A service type" },
+          { "id": "d", "text": "A routing directive" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 14,
+        "question": "What syntax is used for data interpolation in a template?",
+        "choices": [
+          { "id": "a", "text": "{{ }}" },
+          { "id": "b", "text": "[ ]" },
+          { "id": "c", "text": "( )" },
+          { "id": "d", "text": "{ }" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 15,
+        "question": "What is the difference between property binding and event binding?",
+        "choices": [
+          { "id": "a", "text": "Property binding uses [], event binding uses ()" },
+          { "id": "b", "text": "Property binding uses (), event binding uses []" },
+          { "id": "c", "text": "There is no difference" },
+          { "id": "d", "text": "Property binding uses {{ }}, event binding uses []" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 16,
+        "question": "What is the role of package.json in an Angular project?",
+        "choices": [
+          { "id": "a", "text": "It contains project dependencies and scripts" },
+          { "id": "b", "text": "It defines routes" },
+          { "id": "c", "text": "It contains global styles" },
+          { "id": "d", "text": "It lists components" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 17,
+        "question": "What is AOT compilation in Angular?",
+        "choices": [
+          { "id": "a", "text": "Ahead Of Time - compilation before loading" },
+          { "id": "b", "text": "After Only Time - compilation after loading" },
+          { "id": "c", "text": "Always On Test - compilation for tests" },
+          { "id": "d", "text": "Application Of Type - type compilation" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 18,
+        "question": "Which command creates a new Angular application?",
+        "choices": [
+          { "id": "a", "text": "ng new app-name" },
+          { "id": "b", "text": "npm create angular" },
+          { "id": "c", "text": "ng init" },
+          { "id": "d", "text": "ng start" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 19,
+        "question": "What is the role of the angular.json file?",
+        "choices": [
+          { "id": "a", "text": "It contains npm dependencies" },
+          { "id": "b", "text": "It configures the CLI and Angular project settings" },
+          { "id": "c", "text": "It defines routes" },
+          { "id": "d", "text": "It contains tests" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 20,
+        "question": "What is change detection in Angular?",
+        "choices": [
+          { "id": "a", "text": "A data storage method" },
+          { "id": "b", "text": "A process that detects data changes and updates the view" },
+          { "id": "c", "text": "A directive type" },
+          { "id": "d", "text": "A routing system" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 21,
+        "question": "Which lifecycle method is called when a component is destroyed?",
+        "choices": [
+          { "id": "a", "text": "ngOnInit" },
+          { "id": "b", "text": "ngOnDestroy" },
+          { "id": "c", "text": "ngAfterContentChecked" },
+          { "id": "d", "text": "ngOnChanges" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 22,
+        "question": "What is a standalone component in Angular?",
+        "choices": [
+          { "id": "a", "text": "A component that doesn't depend on an NgModule" },
+          { "id": "b", "text": "A component without a template" },
+          { "id": "c", "text": "A component without a TypeScript class" },
+          { "id": "d", "text": "A component that can only be used once" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 23,
+        "question": "What is the advantage of standalone components?",
+        "choices": [
+          { "id": "a", "text": "They compile faster" },
+          { "id": "b", "text": "Simplified structure and less boilerplate" },
+          { "id": "c", "text": "They use less memory" },
+          { "id": "d", "text": "They don't have lifecycle hooks" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 24,
+        "question": "Which command builds an Angular application for production?",
+        "choices": [
+          { "id": "a", "text": "ng build --prod" },
+          { "id": "b", "text": "ng compile" },
+          { "id": "c", "text": "ng build" },
+          { "id": "d", "text": "npm run build" }
+        ],
+        "answer": "c"
+      },
+      {
+        "id": 25,
+        "question": "What is JIT compilation?",
+        "choices": [
+          { "id": "a", "text": "Just In Time - compilation at runtime in the browser" },
+          { "id": "b", "text": "Java In Time - compilation for Java" },
+          { "id": "c", "text": "JSON In Text - JSON compilation" },
+          { "id": "d", "text": "JavaScript Integration Test - compilation tests" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 26,
+        "question": "What is the main difference between AOT and JIT?",
+        "choices": [
+          { "id": "a", "text": "AOT is faster for development" },
+          { "id": "b", "text": "AOT compiles before execution, JIT compiles during execution" },
+          { "id": "c", "text": "JIT is used for production only" },
+          { "id": "d", "text": "There is no difference" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 27,
+        "question": "What is interpolation in Angular?",
+        "choices": [
+          { "id": "a", "text": "A dependency injection method" },
+          { "id": "b", "text": "Displaying dynamic values in the template with {{ }}" },
+          { "id": "c", "text": "A directive type" },
+          { "id": "d", "text": "A routing technique" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 28,
+        "question": "What is the role of the node_modules folder?",
+        "choices": [
+          { "id": "a", "text": "It contains application components" },
+          { "id": "b", "text": "It contains the project's npm dependencies" },
+          { "id": "c", "text": "It stores images" },
+          { "id": "d", "text": "It contains configuration files" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 29,
+        "question": "What is Angular versioning (e.g., v22)?",
+        "choices": [
+          { "id": "a", "text": "The number of features" },
+          { "id": "b", "text": "The major version number of Angular" },
+          { "id": "c", "text": "The number of bugs fixed" },
+          { "id": "d", "text": "The release year" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 30,
+        "question": "How does Angular improve performance compared to traditional apps?",
+        "choices": [
+          { "id": "a", "text": "By reloading the page on every navigation" },
+          { "id": "b", "text": "Through SPA, lazy loading, and optimized change detection" },
+          { "id": "c", "text": "By using only pure JavaScript" },
+          { "id": "d", "text": "By eliminating CSS entirely" }
+        ],
+        "answer": "b"
+      }
+    ]
+  },
+  {
+    "category": "Components",
+    "questionList": [
+      {
+        "id": 31,
+        "question": "What are the three main parts of an Angular component?",
+        "choices": [
+          { "id": "a", "text": "HTML, CSS, JavaScript" },
+          { "id": "b", "text": "Template, Styles, TypeScript Class" },
+          { "id": "c", "text": "View, Model, Controller" },
+          { "id": "d", "text": "Component, Service, Module" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 32,
+        "question": "Which decorator is used to create a component?",
+        "choices": [
+          { "id": "a", "text": "@NgModule" },
+          { "id": "b", "text": "@Component" },
+          { "id": "c", "text": "@Directive" },
+          { "id": "d", "text": "@Service" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 33,
+        "question": "How do you call a child component in a parent component?",
+        "choices": [
+          { "id": "a", "text": "By using its selector as an HTML tag" },
+          { "id": "b", "text": "By importing its TypeScript class" },
+          { "id": "c", "text": "By creating an instance with new" },
+          { "id": "d", "text": "By adding it to the module imports" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 34,
+        "question": "What is the templateUrl in a component?",
+        "choices": [
+          { "id": "a", "text": "The application URL" },
+          { "id": "b", "text": "The path to the HTML template file" },
+          { "id": "c", "text": "The API service URL" },
+          { "id": "d", "text": "The path to styles" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 35,
+        "question": "Which property of @Component is used to define styles?",
+        "choices": [
+          { "id": "a", "text": "styles" },
+          { "id": "b", "text": "styleUrls" },
+          { "id": "c", "text": "Both are possible" },
+          { "id": "d", "text": "css" }
+        ],
+        "answer": "c"
+      },
+      {
+        "id": 36,
+        "question": "How do you pass data from a parent component to a child component?",
+        "choices": [
+          { "id": "a", "text": "With a service" },
+          { "id": "b", "text": "With @Input" },
+          { "id": "c", "text": "With @Output" },
+          { "id": "d", "text": "With the router" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 37,
+        "question": "How does a child component send data to its parent?",
+        "choices": [
+          { "id": "a", "text": "With @Input" },
+          { "id": "b", "text": "With @Output and EventEmitter" },
+          { "id": "c", "text": "With a service" },
+          { "id": "d", "text": "With @Injectable" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 38,
+        "question": "What is a smart component?",
+        "choices": [
+          { "id": "a", "text": "A component with lots of styles" },
+          { "id": "b", "text": "A component that manages business logic and data" },
+          { "id": "c", "text": "A component without a template" },
+          { "id": "d", "text": "A display-only component" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 39,
+        "question": "What is a dumb (presentational) component?",
+        "choices": [
+          { "id": "a", "text": "A component that does nothing" },
+          { "id": "b", "text": "A component that only displays data and emits events" },
+          { "id": "c", "text": "A component without a class" },
+          { "id": "d", "text": "A buggy component" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 40,
+        "question": "What is the execution order of ngOnInit and ngAfterViewInit?",
+        "choices": [
+          { "id": "a", "text": "ngAfterViewInit then ngOnInit" },
+          { "id": "b", "text": "ngOnInit then ngAfterViewInit" },
+          { "id": "c", "text": "They execute simultaneously" },
+          { "id": "d", "text": "The order is random" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 41,
+        "question": "When should you use ngOnInit instead of the constructor?",
+        "choices": [
+          { "id": "a", "text": "There's no difference" },
+          { "id": "b", "text": "ngOnInit is called after @Input initialization" },
+          { "id": "c", "text": "Constructor is called after ngOnInit" },
+          { "id": "d", "text": "ngOnInit doesn't exist" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 42,
+        "question": "How do you encapsulate component styles?",
+        "choices": [
+          { "id": "a", "text": "With the encapsulation property of @Component" },
+          { "id": "b", "text": "By using only unique CSS classes" },
+          { "id": "c", "text": "Angular doesn't allow style encapsulation" },
+          { "id": "d", "text": "With a dedicated service" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 43,
+        "question": "What are the possible values for style encapsulation?",
+        "choices": [
+          { "id": "a", "text": "None, Only, Global" },
+          { "id": "b", "text": "Emulated, None, ShadowDom" },
+          { "id": "c", "text": "Local, Global, Scoped" },
+          { "id": "d", "text": "Public, Private, Protected" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 44,
+        "question": "What is the OnPush change detection strategy?",
+        "choices": [
+          { "id": "a", "text": "The component updates automatically" },
+          { "id": "b", "text": "The component updates only when @Input references change" },
+          { "id": "c", "text": "The component never updates" },
+          { "id": "d", "text": "The component updates every second" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 45,
+        "question": "How do you implement OnPush in a component?",
+        "choices": [
+          { "id": "a", "text": "In the constructor" },
+          { "id": "b", "text": "With the changeDetection property of @Component" },
+          { "id": "c", "text": "In ngAfterViewInit" },
+          { "id": "d", "text": "In the CSS file" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 46,
+        "question": "What is content projection in Angular?",
+        "choices": [
+          { "id": "a", "text": "Video content projection" },
+          { "id": "b", "text": "Injecting content from the parent component with <ng-content>" },
+          { "id": "c", "text": "Loading data from an API" },
+          { "id": "d", "text": "Image management" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 47,
+        "question": "How do you use content projection with selectors?",
+        "choices": [
+          { "id": "a", "text": "By using ng-content with the select attribute" },
+          { "id": "b", "text": "By using select with ng-template" },
+          { "id": "c", "text": "Both are possible" },
+          { "id": "d", "text": "None of these" }
+        ],
+        "answer": "c"
+      },
+      {
+        "id": 48,
+        "question": "What is ng-template?",
+        "choices": [
+          { "id": "a", "text": "A standard HTML template" },
+          { "id": "b", "text": "An Angular element for defining reusable template fragments" },
+          { "id": "c", "text": "A structural directive" },
+          { "id": "d", "text": "A built-in component" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 49,
+        "question": "What is ng-container?",
+        "choices": [
+          { "id": "a", "text": "A container that creates a div in the DOM" },
+          { "id": "b", "text": "A logical container that doesn't create an element in the DOM" },
+          { "id": "c", "text": "A synonym for ng-template" },
+          { "id": "d", "text": "A style directive" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 50,
+        "question": "What is *ngIf?",
+        "choices": [
+          { "id": "a", "text": "A directive for creating loops" },
+          { "id": "b", "text": "A structural directive to conditionally show/hide an element" },
+          { "id": "c", "text": "A pipe for filtering data" },
+          { "id": "d", "text": "A click event" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 51,
+        "question": "What is the difference between *ngIf and [hidden]?",
+        "choices": [
+          { "id": "a", "text": "There's no difference" },
+          { "id": "b", "text": "ngIf removes the element from DOM, hidden only hides it" },
+          { "id": "c", "text": "hidden removes the element, ngIf only hides it" },
+          { "id": "d", "text": "ngIf is deprecated" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 52,
+        "question": "How do you create an inline template in a component?",
+        "choices": [
+          { "id": "a", "text": "With the template property" },
+          { "id": "b", "text": "By using backticks in templateUrl" },
+          { "id": "c", "text": "By creating a .tpl file" },
+          { "id": "d", "text": "Inline templates are not possible" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 53,
+        "question": "What is @Input() without parentheses in a standalone component?",
+        "choices": [
+          { "id": "a", "text": "A syntax error" },
+          { "id": "b", "text": "Valid syntax for signal inputs" },
+          { "id": "c", "text": "A comment" },
+          { "id": "d", "text": "A private property" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 54,
+        "question": "How do you access a DOM element in a component?",
+        "choices": [
+          { "id": "a", "text": "With document.getElementById" },
+          { "id": "b", "text": "With ViewChild or ViewChildren" },
+          { "id": "c", "text": "With jQuery" },
+          { "id": "d", "text": "With getElementByClassName" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 55,
+        "question": "When can you access a ViewChild in the lifecycle?",
+        "choices": [
+          { "id": "a", "text": "In ngOnInit" },
+          { "id": "b", "text": "In ngAfterViewInit" },
+          { "id": "c", "text": "In the constructor" },
+          { "id": "d", "text": "In ngDoCheck" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 56,
+        "question": "How do you define an alias for an @Input?",
+        "choices": [
+          { "id": "a", "text": "@Input('alias') property: type" },
+          { "id": "b", "text": "@Input(alias) property: type" },
+          { "id": "c", "text": "@Input as alias" },
+          { "id": "d", "text": "@Input(alias: 'property')" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 57,
+        "question": "What is the root component?",
+        "choices": [
+          { "id": "a", "text": "The first component loaded by Angular (usually AppComponent)" },
+          { "id": "b", "text": "A component without a parent" },
+          { "id": "c", "text": "A standalone component only" },
+          { "id": "d", "text": "The last component on the page" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 58,
+        "question": "How do you make a component dynamic in Angular?",
+        "choices": [
+          { "id": "a", "text": "With ng-component" },
+          { "id": "b", "text": "With ng-container or ViewContainerRef" },
+          { "id": "c", "text": "With eval()" },
+          { "id": "d", "text": "Dynamic components are not possible" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 59,
+        "question": "What is ngSwitch?",
+        "choices": [
+          { "id": "a", "text": "A pipe to transform data" },
+          { "id": "b", "text": "A set of directives to conditionally display elements" },
+          { "id": "c", "text": "A navigation event" },
+          { "id": "d", "text": "A routing service" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 60,
+        "question": "What's the benefit of separating components into smaller components?",
+        "choices": [
+          { "id": "a", "text": "No benefit" },
+          { "id": "b", "text": "Better maintainability, reusability, and testability" },
+          { "id": "c", "text": "Slower application" },
+          { "id": "d", "text": "Increases bundle size" }
+        ],
+        "answer": "b"
+      }
+    ]
+  },
+  {
+    "category": "Signals",
+    "questionList": [
+      {
+        "id": 61,
+        "question": "What is a Signal in Angular?",
+        "choices": [
+          { "id": "a", "text": "An event type" },
+          { "id": "b", "text": "A reactive wrapper around a value that notifies consumers of changes" },
+          { "id": "c", "text": "A structural directive" },
+          { "id": "d", "text": "A transformation pipe" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 62,
+        "question": "Since which Angular version are Signals available?",
+        "choices": [
+          { "id": "a", "text": "Angular 15" },
+          { "id": "b", "text": "Angular 16" },
+          { "id": "c", "text": "Angular 17" },
+          { "id": "d", "text": "Angular 18" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 63,
+        "question": "How do you create a Signal with an initial value?",
+        "choices": [
+          { "id": "a", "text": "signal(value)" },
+          { "id": "b", "text": "new Signal(value)" },
+          { "id": "c", "text": "createSignal(value)" },
+          { "id": "d", "text": "Signal.of(value)" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 64,
+        "question": "How do you update a Signal's value?",
+        "choices": [
+          { "id": "a", "text": "mySignal = newValue" },
+          { "id": "b", "text": "mySignal.set(newValue)" },
+          { "id": "c", "text": "mySignal.value = newValue" },
+          { "id": "d", "text": "mySignal.update(newValue)" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 65,
+        "question": "What is the difference between set() and update() on a Signal?",
+        "choices": [
+          { "id": "a", "text": "set replaces the value, update calculates a new value from the old one" },
+          { "id": "b", "text": "update replaces the value, set calculates a new value" },
+          { "id": "c", "text": "They do the same thing" },
+          { "id": "d", "text": "set is for objects, update for primitives" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 66,
+        "question": "What is a computed Signal?",
+        "choices": [
+          { "id": "a", "text": "A Signal that automatically calculates its value from other Signals" },
+          { "id": "b", "text": "A Signal optimized for math calculations" },
+          { "id": "c", "text": "A Signal that can only be read once" },
+          { "id": "d", "text": "A deprecated Signal" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 67,
+        "question": "How do you create a computed Signal?",
+        "choices": [
+          { "id": "a", "text": "computed(() => ...)" },
+          { "id": "b", "text": "signal.computed(() => ...)" },
+          { "id": "c", "text": "createComputed(() => ...)" },
+          { "id": "d", "text": "new Computed(() => ...)" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 68,
+        "question": "What is an effect in Angular Signals?",
+        "choices": [
+          { "id": "a", "text": "A function that automatically runs when dependent Signals change" },
+          { "id": "b", "text": "A visual CSS effect" },
+          { "id": "c", "text": "An animation" },
+          { "id": "d", "text": "A Signal type" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 69,
+        "question": "How do you create an effect?",
+        "choices": [
+          { "id": "a", "text": "effect(() => ...)" },
+          { "id": "b", "text": "createEffect(() => ...)" },
+          { "id": "c", "text": "new Effect(() => ...)" },
+          { "id": "d", "text": "signal.effect(() => ...)" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 70,
+        "question": "When does a computed Signal recalculate its value?",
+        "choices": [
+          { "id": "a", "text": "On every () call" },
+          { "id": "b", "text": "Automatically when a dependent Signal changes" },
+          { "id": "c", "text": "Only once at creation" },
+          { "id": "d", "text": "Never, you must call recalculate()" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 71,
+        "question": "What is dependency injection with Signals?",
+        "choices": [
+          { "id": "a", "text": "inject() can return injected Signals" },
+          { "id": "b", "text": "Signals cannot be injected" },
+          { "id": "c", "text": "You must use @Injectable for Signals" },
+          { "id": "d", "text": "Signals are always singleton" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 72,
+        "question": "What is a required Signal?",
+        "choices": [
+          { "id": "a", "text": "A Signal that must be used" },
+          { "id": "b", "text": "A way to declare a required @Input as a Signal" },
+          { "id": "c", "text": "A read-only Signal" },
+          { "id": "d", "text": "A Signal that cannot be null" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 73,
+        "question": "How do you declare a Signal input in a component?",
+        "choices": [
+          { "id": "a", "text": "input<T>()" },
+          { "id": "b", "text": "@Input() signal: Signal<T>" },
+          { "id": "c", "text": "inputSignal<T>()" },
+          { "id": "d", "text": "@Input().signal<T>()" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 74,
+        "question": "How do you declare a Signal model for two-way binding?",
+        "choices": [
+          { "id": "a", "text": "model<T>()" },
+          { "id": "b", "text": "@Input().model<T>()" },
+          { "id": "c", "text": "input<T>({ twoWay: true })" },
+          { "id": "d", "text": "twoWay<T>()" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 75,
+        "question": "How do you use a Signal in an Angular template?",
+        "choices": [
+          { "id": "a", "text": "{{ mySignal }}" },
+          { "id": "b", "text": "{{ mySignal() }}" },
+          { "id": "c", "text": "{{ mySignal.value }}" },
+          { "id": "d", "text": "[mySignal]" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 76,
+        "question": "What is two-way binding with Signals?",
+        "choices": [
+          { "id": "a", "text": "[()]" },
+          { "id": "b", "text": "[(ngModel)] with a Signal model" },
+          { "id": "c", "text": "{{ }}" },
+          { "id": "d", "text": "[( )]" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 77,
+        "question": "What are the advantages of Signals over RxJS?",
+        "choices": [
+          { "id": "a", "text": "Signals are synchronous and simpler for state values" },
+          { "id": "b", "text": "Signals completely replace RxJS" },
+          { "id": "c", "text": "RxJS is deprecated" },
+          { "id": "d", "text": "Signals handle async streams better" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 78,
+        "question": "Can Signals coexist with RxJS?",
+        "choices": [
+          { "id": "a", "text": "No, you must choose one or the other" },
+          { "id": "b", "text": "Yes, toSignal() and toObservable() allow interoperability" },
+          { "id": "c", "text": "RxJS is deprecated in Angular 22" },
+          { "id": "d", "text": "Signals don't exist yet" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 79,
+        "question": "What is toSignal()?",
+        "choices": [
+          { "id": "a", "text": "Converts an Observable to a Signal" },
+          { "id": "b", "text": "Converts a Signal to an Observable" },
+          { "id": "c", "text": "Creates a Signal from a Promise" },
+          { "id": "d", "text": "Creates a Signal from an Event" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 80,
+        "question": "What is toObservable()?",
+        "choices": [
+          { "id": "a", "text": "Converts a Signal to an Observable" },
+          { "id": "b", "text": "Converts an Observable to a Signal" },
+          { "id": "c", "text": "Creates an Observable from a Promise" },
+          { "id": "d", "text": "Creates a Signal from an Event" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 81,
+        "question": "How do you create a read-only (non-writable) Signal?",
+        "choices": [
+          { "id": "a", "text": "readonly()" },
+          { "id": "b", "text": "asReadonly()" },
+          { "id": "c", "text": "get()" },
+          { "id": "d", "text": "asReadOnly()" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 82,
+        "question": "What is a Signal in a service?",
+        "choices": [
+          { "id": "a", "text": "Signals can only be used in components" },
+          { "id": "b", "text": "A Signal can be created in a service and shared between components" },
+          { "id": "c", "text": "Services cannot use Signals" },
+          { "id": "d", "text": "Signals are always private" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 83,
+        "question": "How does Angular handle change detection with Signals?",
+        "choices": [
+          { "id": "a", "text": "Angular doesn't handle Signals" },
+          { "id": "b", "text": "Angular automatically knows when a Signal changes and updates the view" },
+          { "id": "c", "text": "You must call ChangeDetectorRef manually" },
+          { "id": "d", "text": "Signals don't affect change detection" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 84,
+        "question": "What is the Signal equality function?",
+        "choices": [
+          { "id": "a", "text": "A function to compare two Signals" },
+          { "id": "b", "text": "An option to configure how Signal determines if the value changed" },
+          { "id": "c", "text": "A function to test if a Signal is required" },
+          { "id": "d", "text": "A deprecated function" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 85,
+        "question": "How do you create a Signal with a custom equality function?",
+        "choices": [
+          { "id": "a", "text": "signal(initial, { equal: customFn })" },
+          { "id": "b", "text": "signal(initial, customFn)" },
+          { "id": "c", "text": "signal({ equal: customFn, initial })" },
+          { "id": "d", "text": "customSignal(initial, customFn)" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 86,
+        "question": "What is inject() in the context of Signals?",
+        "choices": [
+          { "id": "a", "text": "A function to inject services returning Signals" },
+          { "id": "b", "text": "A function for components only" },
+          { "id": "c", "text": "A deprecated function" },
+          { "id": "d", "text": "A function to create computed" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 87,
+        "question": "Are computed Signals lazy?",
+        "choices": [
+          { "id": "a", "text": "Yes, they only recalculate if dependencies changed" },
+          { "id": "b", "text": "No, they recalculate on every call" },
+          { "id": "c", "text": "Yes, but only in production" },
+          { "id": "d", "text": "Computed don't exist" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 88,
+        "question": "How do you destroy an effect?",
+        "choices": [
+          { "id": "a", "text": "It's automatically destroyed when the component is destroyed" },
+          { "id": "b", "text": "By calling the destroy() function returned by effect()" },
+          { "id": "c", "text": "By setting the effect to null" },
+          { "id": "d", "text": "Effects cannot be destroyed" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 89,
+        "question": "What is a Signal output?",
+        "choices": [
+          { "id": "a", "text": "A Signal for managing outgoing events from a component" },
+          { "id": "b", "text": "A Signal for inputs" },
+          { "id": "c", "text": "A deprecated Signal" },
+          { "id": "d", "text": "A synonym for EventEmitter" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 90,
+        "question": "How do you declare a Signal output?",
+        "choices": [
+          { "id": "a", "text": "output<T>()" },
+          { "id": "b", "text": "@Output() signal: Signal<T>" },
+          { "id": "c", "text": "outputSignal<T>()" },
+          { "id": "d", "text": "@Output().signal<T>()" }
+        ],
+        "answer": "a"
+      }
+    ]
+  },
+  {
+    "category": "TypeScript",
+    "questionList": [
+      {
+        "id": 91,
+        "question": "What is the role of TypeScript in Angular?",
+        "choices": [
+          { "id": "a", "text": "TypeScript is optional in Angular" },
+          { "id": "b", "text": "TypeScript is Angular's primary language, bringing static typing" },
+          { "id": "c", "text": "TypeScript replaces JavaScript" },
+          { "id": "d", "text": "Angular doesn't use TypeScript" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 92,
+        "question": "How do you declare a typed variable in TypeScript?",
+        "choices": [
+          { "id": "a", "text": "var name: string" },
+          { "id": "b", "text": "let name: string" },
+          { "id": "c", "text": "string name" },
+          { "id": "d", "text": "name: string var" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 93,
+        "question": "What is a union type in TypeScript?",
+        "choices": [
+          { "id": "a", "text": "A type combining multiple types with the | operator" },
+          { "id": "b", "text": "A type that merges two interfaces" },
+          { "id": "c", "text": "A generic type" },
+          { "id": "d", "text": "An enum type" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 94,
+        "question": "How do you create a type for an object with specific properties?",
+        "choices": [
+          { "id": "a", "text": "type Name = { prop: type }" },
+          { "id": "b", "text": "interface Name { prop: type }" },
+          { "id": "c", "text": "Both are possible" },
+          { "id": "d", "text": "None of these" }
+        ],
+        "answer": "c"
+      },
+      {
+        "id": 95,
+        "question": "What is the difference between type and interface?",
+        "choices": [
+          { "id": "a", "text": "There's no difference" },
+          { "id": "b", "text": "type cannot be extended, interface can" },
+          { "id": "c", "text": "type is more flexible (unions, intersections), interface is for objects" },
+          { "id": "d", "text": "interface is deprecated" }
+        ],
+        "answer": "c"
+      },
+      {
+        "id": 96,
+        "question": "What is a generic in TypeScript?",
+        "choices": [
+          { "id": "a", "text": "A type that can only be used once" },
+          { "id": "b", "text": "A parameterizable type that works with different types" },
+          { "id": "c", "text": "A primitive type" },
+          { "id": "d", "text": "An enum type" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 97,
+        "question": "How do you declare a generic?",
+        "choices": [
+          { "id": "a", "text": "function fn<T>(arg: T): T" },
+          { "id": "b", "text": "function fn<T>(arg): T" },
+          { "id": "c", "text": "function fn(arg: T): T where T: generic" },
+          { "id": "d", "text": "generic function fn<T>(arg: T)" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 98,
+        "question": "What is the any type in TypeScript?",
+        "choices": [
+          { "id": "a", "text": "A type for any value, disabling type checking" },
+          { "id": "b", "text": "An unknown type" },
+          { "id": "c", "text": "A null type" },
+          { "id": "d", "text": "A generic type" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 99,
+        "question": "What is the difference between any and unknown?",
+        "choices": [
+          { "id": "a", "text": "There's no difference" },
+          { "id": "b", "text": "unknown requires type checking before use, any doesn't" },
+          { "id": "c", "text": "any is more secure" },
+          { "id": "d", "text": "unknown is deprecated" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 100,
+        "question": "How do you create a typed array in TypeScript?",
+        "choices": [
+          { "id": "a", "text": "Array<Type>" },
+          { "id": "b", "text": "Type[]" },
+          { "id": "c", "text": "Both are possible" },
+          { "id": "d", "text": "None of these" }
+        ],
+        "answer": "c"
+      },
+      {
+        "id": 101,
+        "question": "What is a tuple in TypeScript?",
+        "choices": [
+          { "id": "a", "text": "An array with fixed types for each position" },
+          { "id": "b", "text": "An enum type" },
+          { "id": "c", "text": "A generic" },
+          { "id": "d", "text": "An interface" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 102,
+        "question": "How do you declare a tuple?",
+        "choices": [
+          { "id": "a", "text": "type Tuple = [string, number]" },
+          { "id": "b", "text": "let tuple: (string, number)" },
+          { "id": "c", "text": "tuple<string, number>" },
+          { "id": "d", "text": "Tuple<string, number>" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 103,
+        "question": "What is an enum in TypeScript?",
+        "choices": [
+          { "id": "a", "text": "A type for arrays" },
+          { "id": "b", "text": "An enumerated type with a set of named constants" },
+          { "id": "c", "text": "A generic" },
+          { "id": "d", "text": "An interface" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 104,
+        "question": "How do you declare an enum?",
+        "choices": [
+          { "id": "a", "text": "enum Name { VALUE1, VALUE2 }" },
+          { "id": "b", "text": "enum Name = { VALUE1, VALUE2 }" },
+          { "id": "c", "text": "enum Name: { VALUE1, VALUE2 }" },
+          { "id": "d", "text": "type enum Name { VALUE1, VALUE2 }" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 105,
+        "question": "What is readonly in TypeScript?",
+        "choices": [
+          { "id": "a", "text": "A keyword to make a property immutable" },
+          { "id": "b", "text": "A keyword for private methods" },
+          { "id": "c", "text": "A deprecated keyword" },
+          { "id": "d", "text": "A keyword for constants" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 106,
+        "question": "How do you declare a readonly property in an interface?",
+        "choices": [
+          { "id": "a", "text": "readonly prop: type" },
+          { "id": "b", "text": "const prop: type" },
+          { "id": "c", "text": "prop: readonly type" },
+          { "id": "d", "text": "prop: type readonly" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 107,
+        "question": "What are null and undefined in TypeScript?",
+        "choices": [
+          { "id": "a", "text": "They are the same type" },
+          { "id": "b", "text": "null is an intentionally absent value, undefined is an unassigned value" },
+          { "id": "c", "text": "null doesn't exist in TypeScript" },
+          { "id": "d", "text": "undefined doesn't exist in TypeScript" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 108,
+        "question": "How do you make an interface property optional?",
+        "choices": [
+          { "id": "a", "text": "prop?: type" },
+          { "id": "b", "text": "prop: type | undefined" },
+          { "id": "c", "text": "Both are possible" },
+          { "id": "d", "text": "prop: type optional" }
+        ],
+        "answer": "c"
+      },
+      {
+        "id": 109,
+        "question": "What is the never type in TypeScript?",
+        "choices": [
+          { "id": "a", "text": "A type for values that will never occur" },
+          { "id": "b", "text": "A synonym for void" },
+          { "id": "c", "text": "A type for null values" },
+          { "id": "d", "text": "A deprecated type" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 110,
+        "question": "What is the void type in TypeScript?",
+        "choices": [
+          { "id": "a", "text": "A type for functions that return nothing" },
+          { "id": "b", "text": "A type for null values" },
+          { "id": "c", "text": "A type for errors" },
+          { "id": "d", "text": "A deprecated type" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 111,
+        "question": "How do you type a function in TypeScript?",
+        "choices": [
+          { "id": "a", "text": "function fn(arg: type): returnType" },
+          { "id": "b", "text": "function fn(arg: type) -> returnType" },
+          { "id": "c", "text": "function fn(arg: type) => returnType" },
+          { "id": "d", "text": "function fn(arg): returnType" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 112,
+        "question": "How do you type an arrow function?",
+        "choices": [
+          { "id": "a", "text": "const fn = (arg: type): returnType => {}" },
+          { "id": "b", "text": "const fn = (arg: type) -> returnType => {}" },
+          { "id": "c", "text": "const fn: (arg: type) => returnType = (arg) => {}" },
+          { "id": "d", "text": "Both first and third are possible" }
+        ],
+        "answer": "d"
+      },
+      {
+        "id": 113,
+        "question": "What is the Pick type?",
+        "choices": [
+          { "id": "a", "text": "A type to select certain properties from a type" },
+          { "id": "b", "text": "A type to remove properties" },
+          { "id": "c", "text": "A type to merge types" },
+          { "id": "d", "text": "A deprecated type" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 114,
+        "question": "What is the Omit type?",
+        "choices": [
+          { "id": "a", "text": "A type to select properties" },
+          { "id": "b", "text": "A type to remove certain properties from a type" },
+          { "id": "c", "text": "A type to merge types" },
+          { "id": "d", "text": "A deprecated type" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 115,
+        "question": "What is the Partial type?",
+        "choices": [
+          { "id": "a", "text": "Makes all properties of a type optional" },
+          { "id": "b", "text": "Makes all properties required" },
+          { "id": "c", "text": "Makes all properties readonly" },
+          { "id": "d", "text": "Removes properties" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 116,
+        "question": "What is the Required type?",
+        "choices": [
+          { "id": "a", "text": "Makes all properties optional" },
+          { "id": "b", "text": "Makes all properties required" },
+          { "id": "c", "text": "Makes all properties readonly" },
+          { "id": "d", "text": "Removes properties" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 117,
+        "question": "What is the Record type?",
+        "choices": [
+          { "id": "a", "text": "A type to create an object with typed keys and values" },
+          { "id": "b", "text": "A type to record data" },
+          { "id": "c", "text": "A type for arrays" },
+          { "id": "d", "text": "A deprecated type" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 118,
+        "question": "How do you type rest parameters in a function?",
+        "choices": [
+          { "id": "a", "text": "function fn(...args: type[])" },
+          { "id": "b", "text": "function fn(...args: Array<type>)" },
+          { "id": "c", "text": "Both are possible" },
+          { "id": "d", "text": "function fn(args...: type)" }
+        ],
+        "answer": "c"
+      },
+      {
+        "id": 119,
+        "question": "What is type inference in TypeScript?",
+        "choices": [
+          { "id": "a", "text": "TypeScript automatically deduces the type of a variable" },
+          { "id": "b", "text": "TypeScript randomly guesses the type" },
+          { "id": "c", "text": "TypeScript never deduces types" },
+          { "id": "d", "text": "Inference doesn't exist" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 120,
+        "question": "What is the ReturnType type?",
+        "choices": [
+          { "id": "a", "text": "A type to extract a function's return type" },
+          { "id": "b", "text": "A type to define a return type" },
+          { "id": "c", "text": "A deprecated type" },
+          { "id": "d", "text": "A type for parameters" }
+        ],
+        "answer": "a"
+      }
+    ]
+  },
+  {
+    "category": "Services",
+    "questionList": [
+      {
+        "id": 121,
+        "question": "What is a service in Angular?",
+        "choices": [
+          { "id": "a", "text": "A template-less component" },
+          { "id": "b", "text": "A class for managing business logic and data sharing" },
+          { "id": "c", "text": "A routing module" },
+          { "id": "d", "text": "A CSS file" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 122,
+        "question": "Which decorator is used to create a service?",
+        "choices": [
+          { "id": "a", "text": "@Service" },
+          { "id": "b", "text": "@Injectable" },
+          { "id": "c", "text": "@Component" },
+          { "id": "d", "text": "@Module" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 123,
+        "question": "What is dependency injection (DI) in Angular?",
+        "choices": [
+          { "id": "a", "text": "A system to create dependencies" },
+          { "id": "b", "text": "A design pattern where Angular provides dependencies to classes" },
+          { "id": "c", "text": "A method to remove dependencies" },
+          { "id": "d", "text": "A routing system" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 124,
+        "question": "How do you inject a service into a component?",
+        "choices": [
+          { "id": "a", "text": "By creating an instance with new" },
+          { "id": "b", "text": "By declaring it in the constructor" },
+          { "id": "c", "text": "With an import" },
+          { "id": "d", "text": "With a static function" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 125,
+        "question": "What is providedIn in the @Injectable decorator?",
+        "choices": [
+          { "id": "a", "text": "The component name" },
+          { "id": "b", "text": "The registration scope of the service (e.g., 'root')" },
+          { "id": "c", "text": "The service's return type" },
+          { "id": "d", "text": "The route name" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 126,
+        "question": "What does providedIn: 'root' mean?",
+        "choices": [
+          { "id": "a", "text": "The service is only available in the root component" },
+          { "id": "b", "text": "The service is a singleton available throughout the application" },
+          { "id": "c", "text": "The service is created on every injection" },
+          { "id": "d", "text": "The service is not available" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 127,
+        "question": "What is the difference between providedIn: 'root' and the old providers system?",
+        "choices": [
+          { "id": "a", "text": "There's no difference" },
+          { "id": "b", "text": "providedIn is more modern and allows tree-shaking" },
+          { "id": "c", "text": "providers is more performant" },
+          { "id": "d", "text": "providedIn is deprecated" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 128,
+        "question": "What is a singleton service?",
+        "choices": [
+          { "id": "a", "text": "A service created multiple times" },
+          { "id": "b", "text": "A service with a single shared instance in the application" },
+          { "id": "c", "text": "A service without a constructor" },
+          { "id": "d", "text": "A private service" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 129,
+        "question": "How do you create a service with multiple instances?",
+        "choices": [
+          { "id": "a", "text": "By using providedIn with a specific component" },
+          { "id": "b", "text": "By declaring it in a component's providers" },
+          { "id": "c", "text": "By creating a class without @Injectable" },
+          { "id": "d", "text": "Services are always singleton" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 130,
+        "question": "What is HttpClient in a service?",
+        "choices": [
+          { "id": "a", "text": "A service for cache management" },
+          { "id": "b", "text": "An Angular service for making HTTP requests" },
+          { "id": "c", "text": "A routing service" },
+          { "id": "d", "text": "A validation service" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 131,
+        "question": "How do you inject HttpClient into a service?",
+        "choices": [
+          { "id": "a", "text": "constructor(private http: HttpClient)" },
+          { "id": "b", "text": "constructor(private http: Http)" },
+          { "id": "c", "text": "constructor(private client: HttpClient)" },
+          { "id": "d", "text": "new HttpClient()" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 132,
+        "question": "Which HttpClient method is used for a GET request?",
+        "choices": [
+          { "id": "a", "text": "http.get()" },
+          { "id": "b", "text": "http.request()" },
+          { "id": "c", "text": "http.fetch()" },
+          { "id": "d", "text": "http.query()" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 133,
+        "question": "What return type is used for an HTTP request with HttpClient?",
+        "choices": [
+          { "id": "a", "text": "Promise" },
+          { "id": "b", "text": "Observable" },
+          { "id": "c", "text": "Signal" },
+          { "id": "d", "text": "Array" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 134,
+        "question": "How do you convert an Observable to a Promise?",
+        "choices": [
+          { "id": "a", "text": "observable.toPromise()" },
+          { "id": "b", "text": "firstValueFrom(observable)" },
+          { "id": "c", "text": "observable.promise()" },
+          { "id": "d", "text": "new Promise(observable)" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 135,
+        "question": "What is a BehaviorSubject?",
+        "choices": [
+          { "id": "a", "text": "An Observable that emits the last value to new subscribers" },
+          { "id": "b", "text": "An Observable without an initial value" },
+          { "id": "c", "text": "An Observable that emits only once" },
+          { "id": "d", "text": "A Signal" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 136,
+        "question": "What is a Subject in RxJS?",
+        "choices": [
+          { "id": "a", "text": "A Signal type" },
+          { "id": "b", "text": "A multicast Observable that can be used as an EventEmitter" },
+          { "id": "c", "text": "An Angular service" },
+          { "id": "d", "text": "A directive" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 137,
+        "question": "What is the difference between Observable and Subject?",
+        "choices": [
+          { "id": "a", "text": "There's no difference" },
+          { "id": "b", "text": "Subject can emit values with next(), Observable cannot" },
+          { "id": "c", "text": "Observable can emit, Subject cannot" },
+          { "id": "d", "text": "Subject is deprecated" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 138,
+        "question": "What is the switchMap operator?",
+        "choices": [
+          { "id": "a", "text": "Cancels the previous Observable and creates a new one for each emission" },
+          { "id": "b", "text": "Combines two Observables" },
+          { "id": "c", "text": "Filters Observable values" },
+          { "id": "d", "text": "Converts an Observable to a Promise" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 139,
+        "question": "What is the takeUntil operator?",
+        "choices": [
+          { "id": "a", "text": "Takes values until another Observable emits" },
+          { "id": "b", "text": "Takes the first n values" },
+          { "id": "c", "text": "Filters values" },
+          { "id": "d", "text": "Transforms values" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 140,
+        "question": "How do you unsubscribe from an Observable in a component?",
+        "choices": [
+          { "id": "a", "text": "By calling unsubscribe() on the subscription" },
+          { "id": "b", "text": "With takeUntil in ngOnDestroy" },
+          { "id": "c", "text": "With AsyncPipe in the template" },
+          { "id": "d", "text": "All of these" }
+        ],
+        "answer": "d"
+      },
+      {
+        "id": 141,
+        "question": "What is an HTTP interceptor?",
+        "choices": [
+          { "id": "a", "text": "A middleware to modify HTTP requests/responses" },
+          { "id": "b", "text": "A cache service" },
+          { "id": "c", "text": "A directive type" },
+          { "id": "d", "text": "A routing system" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 142,
+        "question": "How do you register an HTTP interceptor?",
+        "choices": [
+          { "id": "a", "text": "In the app's providers with HTTP_INTERCEPTORS" },
+          { "id": "b", "text": "In the constructor" },
+          { "id": "c", "text": "In the module's imports" },
+          { "id": "d", "text": "In the HTML file" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 143,
+        "question": "What is the tap operator?",
+        "choices": [
+          { "id": "a", "text": "Executes a side effect without modifying values" },
+          { "id": "b", "text": "Transforms values" },
+          { "id": "c", "text": "Filters values" },
+          { "id": "d", "text": "Cancels the Observable" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 144,
+        "question": "What is the catchError operator?",
+        "choices": [
+          { "id": "a", "text": "Handles Observable errors" },
+          { "id": "b", "text": "Filters errors" },
+          { "id": "c", "text": "Transforms errors" },
+          { "id": "d", "text": "Removes errors" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 145,
+        "question": "What is retryWhen?",
+        "choices": [
+          { "id": "a", "text": "Retries an Observable on error based on a condition" },
+          { "id": "b", "text": "Retries immediately" },
+          { "id": "c", "text": "Cancels the Observable" },
+          { "id": "d", "text": "Transforms the error" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 146,
+        "question": "How do you create a service with InjectionToken for a non-class value?",
+        "choices": [
+          { "id": "a", "text": "new InjectionToken<Type>('description')" },
+          { "id": "b", "text": "inject('token')" },
+          { "id": "c", "text": "@Inject('token')" },
+          { "id": "d", "text": "Both first and second are possible" }
+        ],
+        "answer": "d"
+      },
+      {
+        "id": 147,
+        "question": "What is constructor injection vs inject()?",
+        "choices": [
+          { "id": "a", "text": "inject() can be used outside the constructor" },
+          { "id": "b", "text": "There's no difference" },
+          { "id": "c", "text": "inject() is deprecated" },
+          { "id": "d", "text": "Constructor is deprecated" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 148,
+        "question": "What is a route guard?",
+        "choices": [
+          { "id": "a", "text": "A service to protect route access" },
+          { "id": "b", "text": "A security component" },
+          { "id": "c", "text": "A directive" },
+          { "id": "d", "text": "A pipe" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 149,
+        "question": "What are the available guard types?",
+        "choices": [
+          { "id": "a", "text": "canActivate, canActivateChild, canLoad, canMatch" },
+          { "id": "b", "text": "protect, secure, allow, deny" },
+          { "id": "c", "text": "beforeEnter, afterEnter" },
+          { "id": "d", "text": "check, verify, validate" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 150,
+        "question": "What is a resolver?",
+        "choices": [
+          { "id": "a", "text": "A service to preload data before route activation" },
+          { "id": "b", "text": "A name resolution system" },
+          { "id": "c", "text": "A transformation pipe" },
+          { "id": "d", "text": "A resolution directive" }
+        ],
+        "answer": "a"
+      }
+    ]
+  },
+  {
+    "category": "Directives",
+    "questionList": [
+      {
+        "id": 151,
+        "question": "What is a directive in Angular?",
+        "choices": [
+          { "id": "a", "text": "A template-less component" },
+          { "id": "b", "text": "A class that can modify DOM behavior or elements" },
+          { "id": "c", "text": "A styling service" },
+          { "id": "d", "text": "A CSS file" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 152,
+        "question": "What are the three types of directives in Angular?",
+        "choices": [
+          { "id": "a", "text": "Component, Attribute, Structural" },
+          { "id": "b", "text": "Component, Directive, Pipe" },
+          { "id": "c", "text": "Structural, Attribute, Component" },
+          { "id": "d", "text": "Directive, Service, Guard" }
+        ],
+        "answer": "c"
+      },
+      {
+        "id": 153,
+        "question": "What is a structural directive?",
+        "choices": [
+          { "id": "a", "text": "A directive that modifies DOM structure (adding/removing elements)" },
+          { "id": "b", "text": "A directive that modifies styles" },
+          { "id": "c", "text": "A directive for events" },
+          { "id": "d", "text": "A directive for attributes" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 154,
+        "question": "What prefix identifies a structural directive?",
+        "choices": [
+          { "id": "a", "text": "The * sign" },
+          { "id": "b", "text": "The @ sign" },
+          { "id": "c", "text": "The # sign" },
+          { "id": "d", "text": "The & sign" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 155,
+        "question": "What is *ngFor?",
+        "choices": [
+          { "id": "a", "text": "A directive to repeat an element for each item in a list" },
+          { "id": "b", "text": "A directive for while loops" },
+          { "id": "c", "text": "A directive for conditions" },
+          { "id": "d", "text": "A directive for events" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 156,
+        "question": "How do you get the index in an *ngFor loop?",
+        "choices": [
+          { "id": "a", "text": "*ngFor='let item of items; let i = index'" },
+          { "id": "b", "text": "*ngFor='let item of items; index as i'" },
+          { "id": "c", "text": "*ngFor='let item of items; get index'" },
+          { "id": "d", "text": "*ngFor='let item of items; i = index()'" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 157,
+        "question": "What is *ngFor with trackBy?",
+        "choices": [
+          { "id": "a", "text": "A function to optimize rendering by identifying unique elements" },
+          { "id": "b", "text": "A function to filter elements" },
+          { "id": "c", "text": "A function to sort elements" },
+          { "id": "d", "text": "A deprecated function" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 158,
+        "question": "What is ng-template?",
+        "choices": [
+          { "id": "a", "text": "An Angular element for defining reusable template fragments" },
+          { "id": "b", "text": "A structural directive" },
+          { "id": "c", "text": "A built-in component" },
+          { "id": "d", "text": "A templating service" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 159,
+        "question": "How do you use an ng-template?",
+        "choices": [
+          { "id": "a", "text": "With ngIf and ngFor" },
+          { "id": "b", "text": "With the ngTemplateOutlet directive" },
+          { "id": "c", "text": "Directly in HTML" },
+          { "id": "d", "text": "ng-template cannot be used" }
+        ],
+        "answer": "b"
+      },
+      {
+        "id": 160,
+        "question": "What is an attribute directive?",
+        "choices": [
+          { "id": "a", "text": "A directive that modifies an element's appearance or behavior" },
+          { "id": "b", "text": "A directive that modifies DOM structure" },
+          { "id": "c", "text": "A directive for routing" },
+          { "id": "d", "text": "A template-less component" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 161,
+        "question": "How do you create an attribute directive?",
+        "choices": [
+          { "id": "a", "text": "With the @Directive decorator" },
+          { "id": "b", "text": "With the @Component decorator" },
+          { "id": "c", "text": "With the @Attribute decorator" },
+          { "id": "d", "text": "With the @NgModule decorator" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 162,
+        "question": "Which @Directive property defines the selector?",
+        "choices": [
+          { "id": "a", "text": "selector" },
+          { "id": "b", "text": "name" },
+          { "id": "c", "text": "target" },
+          { "id": "d", "text": "element" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 163,
+        "question": "How does a directive access the host element?",
+        "choices": [
+          { "id": "a", "text": "With ElementRef injected in the constructor" },
+          { "id": "b", "text": "With document.querySelector" },
+          { "id": "c", "text": "With @HostBinding" },
+          { "id": "d", "text": "Both first and second are possible" }
+        ],
+        "answer": "d"
+      },
+      {
+        "id": 164,
+        "question": "What is @HostListener?",
+        "choices": [
+          { "id": "a", "text": "A decorator to listen to DOM events on the host element" },
+          { "id": "b", "text": "A decorator to listen to services" },
+          { "id": "c", "text": "A decorator for routing" },
+          { "id": "d", "text": "A deprecated decorator" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 165,
+        "question": "How do you use @HostListener for a click event?",
+        "choices": [
+          { "id": "a", "text": "@HostListener('click', ['$event']) onClick(event: Event)" },
+          { "id": "b", "text": "@HostListener('click') onClick(event)" },
+          { "id": "c", "text": "@HostListener(click) onClick()" },
+          { "id": "d", "text": "@HostListener('onclick') onClick()" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 166,
+        "question": "What is @HostBinding?",
+        "choices": [
+          { "id": "a", "text": "A decorator to bind a directive property to a host property" },
+          { "id": "b", "text": "A decorator to bind services" },
+          { "id": "c", "text": "A decorator for routing" },
+          { "id": "d", "text": "A deprecated decorator" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 167,
+        "question": "How do you bind an element's CSS class with @HostBinding?",
+        "choices": [
+          { "id": "a", "text": "@HostBinding('class.my-class') isActive: boolean" },
+          { "id": "b", "text": "@HostBinding('class') myClass: string" },
+          { "id": "c", "text": "@HostBinding('className') myClass: string" },
+          { "id": "d", "text": "All three are possible" }
+        ],
+        "answer": "d"
+      },
+      {
+        "id": 168,
+        "question": "What is ngClass?",
+        "choices": [
+          { "id": "a", "text": "A directive to dynamically add/remove CSS classes" },
+          { "id": "b", "text": "A pipe to transform classes" },
+          { "id": "c", "text": "A styling function" },
+          { "id": "d", "text": "A CSS component" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 169,
+        "question": "How do you use ngClass with an object?",
+        "choices": [
+          { "id": "a", "text": "[ngClass]='{ class: condition }'" },
+          { "id": "b", "text": "[ngClass]='{ condition: class }'" },
+          { "id": "c", "text": "ngClass='{ class: condition }'" },
+          { "id": "d", "text": "Both first and second are possible" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 170,
+        "question": "What is ngStyle?",
+        "choices": [
+          { "id": "a", "text": "A directive to apply dynamic CSS styles" },
+          { "id": "b", "text": "A styling component" },
+          { "id": "c", "text": "A transformation pipe" },
+          { "id": "d", "text": "A CSS function" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 171,
+        "question": "How do you use ngStyle?",
+        "choices": [
+          { "id": "a", "text": "[ngStyle]='{ property: value }'" },
+          { "id": "b", "text": "[ngStyle]='{ value: property }'" },
+          { "id": "c", "text": "ngStyle='{ property: value }'" },
+          { "id": "d", "text": "Both first and second are possible" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 172,
+        "question": "What is ngSwitch?",
+        "choices": [
+          { "id": "a", "text": "A set of directives to conditionally display elements based on a value" },
+          { "id": "b", "text": "A directive for radio buttons" },
+          { "id": "c", "text": "A selection component" },
+          { "id": "d", "text": "A transformation pipe" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 173,
+        "question": "Which directives make up ngSwitch?",
+        "choices": [
+          { "id": "a", "text": "[ngSwitch], *ngSwitchCase, *ngSwitchDefault" },
+          { "id": "b", "text": "ngSwitch, ngCase, ngDefault" },
+          { "id": "c", "text": "*ngSwitch, *ngCase, *ngDefault" },
+          { "id": "d", "text": "switch, case, default" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 174,
+        "question": "What is syntactic sugar for structural directives?",
+        "choices": [
+          { "id": "a", "text": "The simplified * notation that hides ng-template" },
+          { "id": "b", "text": "Writing directives with emojis" },
+          { "id": "c", "text": "Writing directives in uppercase" },
+          { "id": "d", "text": "Using global variables" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 175,
+        "question": "What is the desugared form of *ngIf='condition'?",
+        "choices": [
+          { "id": "a", "text": "<ng-template [ngIf]='condition'>" },
+          { "id": "b", "text": "<template *ngIf='condition'>" },
+          { "id": "c", "text": "<div ngIf='condition'>" },
+          { "id": "d", "text": "<ng-if condition='condition'>" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 176,
+        "question": "What is ng-content?",
+        "choices": [
+          { "id": "a", "text": "A directive for content projection" },
+          { "id": "b", "text": "A directive for lazy loading" },
+          { "id": "c", "text": "A directive for events" },
+          { "id": "d", "text": "A content service" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 177,
+        "question": "How do you use ng-content with a selector?",
+        "choices": [
+          { "id": "a", "text": "<ng-content select='.my-class'>" },
+          { "id": "b", "text": "<ng-content selector='.my-class'>" },
+          { "id": "c", "text": "<ng-content for='.my-class'>" },
+          { "id": "d", "text": "<ng-content target='.my-class'>" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 178,
+        "question": "What is ng-container?",
+        "choices": [
+          { "id": "a", "text": "A logical container that doesn't create a DOM element" },
+          { "id": "b", "text": "A physical container with a div" },
+          { "id": "c", "text": "A structural directive" },
+          { "id": "d", "text": "A container service" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 179,
+        "question": "Why use ng-container with both *ngIf and *ngFor on the same element?",
+        "choices": [
+          { "id": "a", "text": "Because an element can only have one structural directive" },
+          { "id": "b", "text": "For performance reasons" },
+          { "id": "c", "text": "For lazy loading" },
+          { "id": "d", "text": "It's an Angular requirement" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 180,
+        "question": "What is custom two-way binding with a directive?",
+        "choices": [
+          { "id": "a", "text": "Creating a directive with @Input and @Output of the same name suffixed with Change" },
+          { "id": "b", "text": "Using only @Input" },
+          { "id": "c", "text": "Using only @Output" },
+          { "id": "d", "text": "Directives don't support two-way binding" }
+        ],
+        "answer": "a"
+      }
+    ]
+  },
+  {
+    "category": "Router",
+    "questionList": [
+      {
+        "id": 181,
+        "question": "What is the Router in Angular?",
+        "choices": [
+          { "id": "a", "text": "A service for navigation in a SPA" },
+          { "id": "b", "text": "A navigation component" },
+          { "id": "c", "text": "A link directive" },
+          { "id": "d", "text": "A transformation pipe" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 182,
+        "question": "How do you configure routes in an Angular application?",
+        "choices": [
+          { "id": "a", "text": "In a routes.ts file with a Route array" },
+          { "id": "b", "text": "In angular.json" },
+          { "id": "c", "text": "In index.html" },
+          { "id": "d", "text": "In CSS styles" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 183,
+        "question": "How do you register routes in a standalone Angular application?",
+        "choices": [
+          { "id": "a", "text": "provideRouter(routes)" },
+          { "id": "b", "text": "RouterModule.forRoot(routes)" },
+          { "id": "c", "text": "Router.configure(routes)" },
+          { "id": "d", "text": "app.routes = routes" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 184,
+        "question": "Which route property defines its path?",
+        "choices": [
+          { "id": "a", "text": "path" },
+          { "id": "b", "text": "url" },
+          { "id": "c", "text": "route" },
+          { "id": "d", "text": "pathname" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 185,
+        "question": "How do you display the current route's component?",
+        "choices": [
+          { "id": "a", "text": "<router-outlet>" },
+          { "id": "b", "text": "<ng-content>" },
+          { "id": "c", "text": "<router-view>" },
+          { "id": "d", "text": "<route-component>" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 186,
+        "question": "What is routerLink?",
+        "choices": [
+          { "id": "a", "text": "A directive to create navigation links" },
+          { "id": "b", "text": "A routing service" },
+          { "id": "c", "text": "A transformation pipe" },
+          { "id": "d", "text": "A navigation function" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 187,
+        "question": "How do you create a link to a route?",
+        "choices": [
+          { "id": "a", "text": "<a [routerLink]=\"['/path']\">Link</a>" },
+          { "id": "b", "text": "<a routerLink=\"/path\">Link</a>" },
+          { "id": "c", "text": "Both are possible" },
+          { "id": "d", "text": "<a href=\"/path\">Link</a>" }
+        ],
+        "answer": "c"
+      },
+      {
+        "id": 188,
+        "question": "How do you navigate programmatically to a route?",
+        "choices": [
+          { "id": "a", "text": "router.navigate(['/path'])" },
+          { "id": "b", "text": "router.go('/path')" },
+          { "id": "c", "text": "router.push('/path')" },
+          { "id": "d", "text": "router.route('/path')" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 189,
+        "question": "What are child routes?",
+        "choices": [
+          { "id": "a", "text": "Routes nested within a parent route" },
+          { "id": "b", "text": "Parallel routes" },
+          { "id": "c", "text": "Lazy routes" },
+          { "id": "d", "text": "Guarded routes" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 190,
+        "question": "How do you define child routes?",
+        "choices": [
+          { "id": "a", "text": "With the children property in the parent route" },
+          { "id": "b", "text": "With the childRoutes property" },
+          { "id": "c", "text": "With the subRoutes property" },
+          { "id": "d", "text": "By creating a separate array" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 191,
+        "question": "What is route lazy loading?",
+        "choices": [
+          { "id": "a", "text": "Loading modules/features on demand" },
+          { "id": "b", "text": "Synchronous route loading" },
+          { "id": "c", "text": "Image loading" },
+          { "id": "d", "text": "Style loading" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 192,
+        "question": "How do you configure a lazy loaded route?",
+        "choices": [
+          { "id": "a", "text": "loadComponent: () => import('./my-component').then(m => m.MyComponent)" },
+          { "id": "b", "text": "lazy: true, component: MyComponent" },
+          { "id": "c", "text": "async: true, load: './my-component'" },
+          { "id": "d", "text": "defer: true, path: './my-component'" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 193,
+        "question": "How do you get route parameters?",
+        "choices": [
+          { "id": "a", "text": "With ActivatedRoute and paramMap or params" },
+          { "id": "b", "text": "With Router and getParams" },
+          { "id": "c", "text": "With Route and params" },
+          { "id": "d", "text": "Parameters are not accessible" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 194,
+        "question": "What is the difference between paramMap and params?",
+        "choices": [
+          { "id": "a", "text": "paramMap is an Observable, params is a snapshot" },
+          { "id": "b", "text": "There's no difference" },
+          { "id": "c", "text": "params is an Observable, paramMap is a snapshot" },
+          { "id": "d", "text": "paramMap is deprecated" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 195,
+        "question": "How do you define a route parameter?",
+        "choices": [
+          { "id": "a", "text": "path: 'route/:id'" },
+          { "id": "b", "text": "path: 'route/{id}'" },
+          { "id": "c", "text": "path: 'route/<id>'" },
+          { "id": "d", "text": "path: 'route/[id]'" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 196,
+        "question": "How do you pass query parameters (?key=value)?",
+        "choices": [
+          { "id": "a", "text": "With queryParams in navigate or routerLink" },
+          { "id": "b", "text": "In the route path" },
+          { "id": "c", "text": "With searchParams" },
+          { "id": "d", "text": "Query parameters are not possible" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 197,
+        "question": "What is a route guard?",
+        "choices": [
+          { "id": "a", "text": "A service to protect route access" },
+          { "id": "b", "text": "A security component" },
+          { "id": "c", "text": "A directive" },
+          { "id": "d", "text": "A pipe" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 198,
+        "question": "What are the available guard types?",
+        "choices": [
+          { "id": "a", "text": "canActivate, canActivateChild, canMatch, canLoad" },
+          { "id": "b", "text": "protect, secure, allow, deny" },
+          { "id": "c", "text": "beforeEnter, afterEnter" },
+          { "id": "d", "text": "check, verify, validate" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 199,
+        "question": "How do you use a canActivate guard?",
+        "choices": [
+          { "id": "a", "text": "canActivate: [guard]" },
+          { "id": "b", "text": "guards: [guard]" },
+          { "id": "c", "text": "protect: [guard]" },
+          { "id": "d", "text": "security: [guard]" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 200,
+        "question": "What is a resolver?",
+        "choices": [
+          { "id": "a", "text": "A service to preload data before route activation" },
+          { "id": "b", "text": "A name resolution system" },
+          { "id": "c", "text": "A transformation pipe" },
+          { "id": "d", "text": "A resolution directive" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 201,
+        "question": "How do you use a resolver?",
+        "choices": [
+          { "id": "a", "text": "resolve: { data: resolver }" },
+          { "id": "b", "text": "resolvers: [resolver]" },
+          { "id": "c", "text": "preload: resolver" },
+          { "id": "d", "text": "load: resolver" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 202,
+        "question": "How do you access resolver data?",
+        "choices": [
+          { "id": "a", "text": "With ActivatedRoute snapshot.data" },
+          { "id": "b", "text": "With Router.data" },
+          { "id": "c", "text": "With Route.resolver" },
+          { "id": "d", "text": "Resolvers are not accessible" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 203,
+        "question": "What is routerLinkActive?",
+        "choices": [
+          { "id": "a", "text": "A directive to add a class when the route is active" },
+          { "id": "b", "text": "A routing service" },
+          { "id": "c", "text": "A transformation pipe" },
+          { "id": "d", "text": "A navigation function" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 204,
+        "question": "How do you use routerLinkActive?",
+        "choices": [
+          { "id": "a", "text": "[routerLinkActive]=\"'active'\"" },
+          { "id": "b", "text": "routerLinkActive='active'" },
+          { "id": "c", "text": "Both are possible" },
+          { "id": "d", "text": "activeLink='active'" }
+        ],
+        "answer": "c"
+      },
+      {
+        "id": 205,
+        "question": "What is routerLinkActiveOptions?",
+        "choices": [
+          { "id": "a", "text": "To configure exact route matching" },
+          { "id": "b", "text": "To configure active styles" },
+          { "id": "c", "text": "To configure animations" },
+          { "id": "d", "text": "To configure lazy loading" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 206,
+        "question": "What is the HashLocationStrategy routing strategy?",
+        "choices": [
+          { "id": "a", "text": "Uses # in the URL for routing" },
+          { "id": "b", "text": "Uses standard URL" },
+          { "id": "c", "text": "Uses query parameters" },
+          { "id": "d", "text": "Doesn't exist" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 207,
+        "question": "How do you get the current URL?",
+        "choices": [
+          { "id": "a", "text": "With router.url" },
+          { "id": "b", "text": "With router.currentUrl" },
+          { "id": "c", "text": "With ActivatedRoute.url" },
+          { "id": "d", "text": "All three are possible" }
+        ],
+        "answer": "d"
+      },
+      {
+        "id": 208,
+        "question": "How do you navigate to the previous page?",
+        "choices": [
+          { "id": "a", "text": "router.navigate(['..'])" },
+          { "id": "b", "text": "router.back()" },
+          { "id": "c", "text": "router.goBack()" },
+          { "id": "d", "text": "window.history.back()" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 209,
+        "question": "What is the route reuse strategy?",
+        "choices": [
+          { "id": "a", "text": "A strategy to reuse routes during navigation" },
+          { "id": "b", "text": "A strategy to remove routes" },
+          { "id": "c", "text": "A lazy loading strategy" },
+          { "id": "d", "text": "Doesn't exist" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 210,
+        "question": "How do you configure a default route (404)?",
+        "choices": [
+          { "id": "a", "text": "path: '**', redirectTo: '/not-found' or component: NotFoundComponent" },
+          { "id": "b", "text": "path: '*', component: NotFoundComponent" },
+          { "id": "c", "text": "path: '404', component: NotFoundComponent" },
+          { "id": "d", "text": "default: NotFoundComponent" }
+        ],
+        "answer": "a"
+      }
+    ]
+  },
+  {
+    "category": "Pipes",
+    "questionList": [
+      {
+        "id": 211,
+        "question": "What is a Pipe in Angular?",
+        "choices": [
+          { "id": "a", "text": "A function to transform data in a template" },
+          { "id": "b", "text": "A navigation component" },
+          { "id": "c", "text": "A structural directive" },
+          { "id": "d", "text": "A styling service" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 212,
+        "question": "How do you use a Pipe in a template?",
+        "choices": [
+          { "id": "a", "text": "{{ value | pipeName }}" },
+          { "id": "b", "text": "{{ value.pipeName() }}" },
+          { "id": "c", "text": "{{ value -> pipeName }}" },
+          { "id": "d", "text": "{{ pipeName(value) }}" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 213,
+        "question": "What are the common built-in Pipes?",
+        "choices": [
+          { "id": "a", "text": "DatePipe, UpperCasePipe, LowerCasePipe, CurrencyPipe, DecimalPipe" },
+          { "id": "b", "text": "Date, Upper, Lower, Currency" },
+          { "id": "c", "text": "date, upper, lower, currency" },
+          { "id": "d", "text": "Both first and second" }
+        ],
+        "answer": "d"
+      },
+      {
+        "id": 214,
+        "question": "How do you format a date with a Pipe?",
+        "choices": [
+          { "id": "a", "text": "{{ date | date:'short' }}" },
+          { "id": "b", "text": "{{ date | Date:'short' }}" },
+          { "id": "c", "text": "{{ date | formatDate:'short' }}" },
+          { "id": "d", "text": "{{ date | format:'short' }}" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 215,
+        "question": "How do you create a custom Pipe?",
+        "choices": [
+          { "id": "a", "text": "With the @Pipe decorator and implementing PipeTransform" },
+          { "id": "b", "text": "With the @Pipe decorator only" },
+          { "id": "c", "text": "By creating an exported function" },
+          { "id": "d", "text": "Both first and second" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 216,
+        "question": "Which method must a custom Pipe implement?",
+        "choices": [
+          { "id": "a", "text": "transform(value: any, ...args: any[]): any" },
+          { "id": "b", "text": "apply(value: any): any" },
+          { "id": "c", "text": "process(value: any): any" },
+          { "id": "d", "text": "convert(value: any): any" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 217,
+        "question": "What is the async Pipe?",
+        "choices": [
+          { "id": "a", "text": "A Pipe that automatically subscribes to Observables/Promises" },
+          { "id": "b", "text": "A Pipe for async functions" },
+          { "id": "c", "text": "A Pipe for deferred loading" },
+          { "id": "d", "text": "A deprecated Pipe" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 218,
+        "question": "How do you use the async Pipe?",
+        "choices": [
+          { "id": "a", "text": "{{ observable$ | async }}" },
+          { "id": "b", "text": "{{ await observable$ }}" },
+          { "id": "c", "text": "{{ observable$.subscribe() }}" },
+          { "id": "d", "text": "{{ observable$ | await }}" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 219,
+        "question": "What is the advantage of the async Pipe?",
+        "choices": [
+          { "id": "a", "text": "Automatic unsubscription and value display" },
+          { "id": "b", "text": "Improved performance only" },
+          { "id": "c", "text": "Lazy loading" },
+          { "id": "d", "text": "Data compression" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 220,
+        "question": "What is the json Pipe?",
+        "choices": [
+          { "id": "a", "text": "A Pipe to display an object as a JSON string" },
+          { "id": "b", "text": "A Pipe to parse JSON" },
+          { "id": "c", "text": "A Pipe to validate JSON" },
+          { "id": "d", "text": "A deprecated Pipe" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 221,
+        "question": "How do you chain multiple Pipes?",
+        "choices": [
+          { "id": "a", "text": "{{ value | pipe1 | pipe2 | pipe3 }}" },
+          { "id": "b", "text": "{{ value | (pipe1, pipe2, pipe3) }}" },
+          { "id": "c", "text": "{{ value | pipe1.pipe2.pipe3 }}" },
+          { "id": "d", "text": "{{ pipe1(pipe2(pipe3(value))) }}" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 222,
+        "question": "How do you pass arguments to a Pipe?",
+        "choices": [
+          { "id": "a", "text": "{{ value | pipe:arg1:arg2 }}" },
+          { "id": "b", "text": "{{ value | pipe(arg1, arg2) }}" },
+          { "id": "c", "text": "{{ value | pipe arg1 arg2 }}" },
+          { "id": "d", "text": "{{ pipe(value, arg1, arg2) }}" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 223,
+        "question": "What is the uppercase Pipe?",
+        "choices": [
+          { "id": "a", "text": "Transforms a string to uppercase" },
+          { "id": "b", "text": "Transforms a string to lowercase" },
+          { "id": "c", "text": "Capitalizes the first letter" },
+          { "id": "d", "text": "Removes uppercase" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 224,
+        "question": "What is the lowercase Pipe?",
+        "choices": [
+          { "id": "a", "text": "Transforms a string to lowercase" },
+          { "id": "b", "text": "Transforms a string to uppercase" },
+          { "id": "c", "text": "Capitalizes the first letter" },
+          { "id": "d", "text": "Adds uppercase" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 225,
+        "question": "What is the titlecase Pipe?",
+        "choices": [
+          { "id": "a", "text": "Capitalizes the first letter of each word" },
+          { "id": "b", "text": "Capitalizes the entire string" },
+          { "id": "c", "text": "Capitalizes the first letter of the string" },
+          { "id": "d", "text": "Capitalizes the last letter" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 226,
+        "question": "How do you format a number with the decimal Pipe?",
+        "choices": [
+          { "id": "a", "text": "{{ number | number:'1.2-2' }}" },
+          { "id": "b", "text": "{{ number | decimal:'1.2-2' }}" },
+          { "id": "c", "text": "{{ number | formatNumber:'1.2-2' }}" },
+          { "id": "d", "text": "Both first and second are possible" }
+        ],
+        "answer": "d"
+      },
+      {
+        "id": 227,
+        "question": "What does '1.2-2' mean in decimal format?",
+        "choices": [
+          { "id": "a", "text": "Min 1 integer digit, min 2 decimal places, max 2 decimal places" },
+          { "id": "b", "text": "Max 1 integer digit, max 2 decimal places, min 2 decimal places" },
+          { "id": "c", "text": "1 integer digit, 2 mandatory decimal places" },
+          { "id": "d", "text": "Date format" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 228,
+        "question": "What is the currency Pipe?",
+        "choices": [
+          { "id": "a", "text": "Formats a number as currency" },
+          { "id": "b", "text": "Formats a number as percentage" },
+          { "id": "c", "text": "Formats a number as decimal" },
+          { "id": "d", "text": "Formats a number as integer" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 229,
+        "question": "How do you use the currency Pipe?",
+        "choices": [
+          { "id": "a", "text": "{{ price | currency:'USD':'symbol':'1.2-2' }}" },
+          { "id": "b", "text": "{{ price | currency:'USD' }}" },
+          { "id": "c", "text": "Both are possible" },
+          { "id": "d", "text": "{{ price | money:'USD' }}" }
+        ],
+        "answer": "c"
+      },
+      {
+        "id": 230,
+        "question": "What is the percent Pipe?",
+        "choices": [
+          { "id": "a", "text": "Formats a number as a percentage" },
+          { "id": "b", "text": "Formats a number as currency" },
+          { "id": "c", "text": "Formats a number as decimal" },
+          { "id": "d", "text": "Formats a number as integer" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 231,
+        "question": "What is the slice Pipe?",
+        "choices": [
+          { "id": "a", "text": "Extracts a sub-part of an array or string" },
+          { "id": "b", "text": "Splits an array into parts" },
+          { "id": "c", "text": "Merges multiple arrays" },
+          { "id": "d", "text": "Sorts an array" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 232,
+        "question": "How do you use the slice Pipe?",
+        "choices": [
+          { "id": "a", "text": "{{ array | slice:start:end }}" },
+          { "id": "b", "text": "{{ array | slice(start, end) }}" },
+          { "id": "c", "text": "{{ array | slice from start to end }}" },
+          { "id": "d", "text": "slice(array, start, end)" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 233,
+        "question": "What is a pure Pipe?",
+        "choices": [
+          { "id": "a", "text": "A Pipe that only recalculates when inputs change by reference" },
+          { "id": "b", "text": "A Pipe that recalculates on every change" },
+          { "id": "c", "text": "A Pipe that cannot be used" },
+          { "id": "d", "text": "A deprecated Pipe" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 234,
+        "question": "What is an impure Pipe?",
+        "choices": [
+          { "id": "a", "text": "A Pipe that recalculates on every change detection cycle" },
+          { "id": "b", "text": "A Pipe that never recalculates" },
+          { "id": "c", "text": "A more performant Pipe" },
+          { "id": "d", "text": "Doesn't exist" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 235,
+        "question": "How do you declare an impure Pipe?",
+        "choices": [
+          { "id": "a", "text": "@Pipe({ name: 'myPipe', pure: false })" },
+          { "id": "b", "text": "@Pipe({ name: 'myPipe', impure: true })" },
+          { "id": "c", "text": "@Pipe({ name: 'myPipe', pure: true })" },
+          { "id": "d", "text": "@Pipe({ name: 'myPipe', standalone: false })" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 236,
+        "question": "What is the i18nSelect Pipe?",
+        "choices": [
+          { "id": "a", "text": "Selects a translation based on a key" },
+          { "id": "b", "text": "Selects a language" },
+          { "id": "c", "text": "Selects a currency" },
+          { "id": "d", "text": "No longer exists" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 237,
+        "question": "What is the i18nPlural Pipe?",
+        "choices": [
+          { "id": "a", "text": "Formats pluralization based on locale" },
+          { "id": "b", "text": "Formats numbers" },
+          { "id": "c", "text": "Formats dates" },
+          { "id": "d", "text": "No longer exists" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 238,
+        "question": "How do you create a Pipe with standalone?",
+        "choices": [
+          { "id": "a", "text": "@Pipe({ name: 'myPipe', standalone: true })" },
+          { "id": "b", "text": "@Pipe({ name: 'myPipe', pure: true })" },
+          { "id": "c", "text": "@Pipe({ name: 'myPipe', export: true })" },
+          { "id": "d", "text": "@Pipe({ name: 'myPipe', import: true })" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 239,
+        "question": "Can Pipes be used with ngFor?",
+        "choices": [
+          { "id": "a", "text": "Yes, you can use a Pipe to filter/sort in ngFor" },
+          { "id": "b", "text": "No, Pipes don't work with ngFor" },
+          { "id": "c", "text": "Only with async" },
+          { "id": "d", "text": "Only with json" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 240,
+        "question": "Why is it discouraged to use a Pipe for filtering in ngFor?",
+        "choices": [
+          { "id": "a", "text": "The Pipe will be recreated on every change, impacting performance" },
+          { "id": "b", "text": "Pipes don't work well" },
+          { "id": "c", "text": "ngFor doesn't accept Pipes" },
+          { "id": "d", "text": "It's not discouraged" }
+        ],
+        "answer": "a"
+      }
+    ]
+  },
+  {
+    "category": "Forms",
+    "questionList": [
+      {
+        "id": 241,
+        "question": "What are the two types of forms in Angular?",
+        "choices": [
+          { "id": "a", "text": "Template-driven and Reactive" },
+          { "id": "b", "text": "Static and Dynamic" },
+          { "id": "c", "text": "Basic and Advanced" },
+          { "id": "d", "text": "Simple and Complex" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 242,
+        "question": "What is a Template-driven form?",
+        "choices": [
+          { "id": "a", "text": "A form where logic is defined in the template" },
+          { "id": "b", "text": "A template-less form" },
+          { "id": "c", "text": "An automatically generated form" },
+          { "id": "d", "text": "A deprecated form" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 243,
+        "question": "What is a Reactive form?",
+        "choices": [
+          { "id": "a", "text": "A form where logic is defined in the TypeScript class" },
+          { "id": "b", "text": "A keyboard-reactive form" },
+          { "id": "c", "text": "An automatically generated form" },
+          { "id": "d", "text": "A deprecated form" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 244,
+        "question": "Which module is needed for Template-driven forms?",
+        "choices": [
+          { "id": "a", "text": "FormsModule" },
+          { "id": "b", "text": "ReactiveFormsModule" },
+          { "id": "c", "text": "FormModule" },
+          { "id": "d", "text": "FormsModule and ReactiveFormsModule" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 245,
+        "question": "Which module is needed for Reactive forms?",
+        "choices": [
+          { "id": "a", "text": "ReactiveFormsModule" },
+          { "id": "b", "text": "FormsModule" },
+          { "id": "c", "text": "FormModule" },
+          { "id": "d", "text": "FormsModule and ReactiveFormsModule" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 246,
+        "question": "How do you create a FormControl in a Reactive form?",
+        "choices": [
+          { "id": "a", "text": "new FormControl('value')" },
+          { "id": "b", "text": "FormControl('value')" },
+          { "id": "c", "text": "createControl('value')" },
+          { "id": "d", "text": "new FormControl().value('value')" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 247,
+        "question": "How do you create a FormGroup?",
+        "choices": [
+          { "id": "a", "text": "new FormGroup({ control: new FormControl('') })" },
+          { "id": "b", "text": "FormGroup({ control: new FormControl('') })" },
+          { "id": "c", "text": "createGroup({ control: new FormControl('') })" },
+          { "id": "d", "text": "new FormGroup().add(control)" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 248,
+        "question": "How do you create a form with FormBuilder?",
+        "choices": [
+          { "id": "a", "text": "fb.group({ control: [''] })" },
+          { "id": "b", "text": "fb.form({ control: [''] })" },
+          { "id": "c", "text": "fb.create({ control: [''] })" },
+          { "id": "d", "text": "fb.build({ control: [''] })" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 249,
+        "question": "How do you bind a Reactive form to the template?",
+        "choices": [
+          { "id": "a", "text": "[formGroup]=\"myForm\"" },
+          { "id": "b", "text": "formGroup=\"myForm\"" },
+          { "id": "c", "text": "(formGroup)=\"myForm\"" },
+          { "id": "d", "text": "formControl=\"myForm\"" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 250,
+        "question": "How do you bind a FormControl to an input?",
+        "choices": [
+          { "id": "a", "text": "formControlName=\"name\"" },
+          { "id": "b", "text": "[formControlName]=\"name\"" },
+          { "id": "c", "text": "name=\"name\"" },
+          { "id": "d", "text": "formControl=\"name\"" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 251,
+        "question": "How do you create a Template-driven form?",
+        "choices": [
+          { "id": "a", "text": "#myForm=\"ngForm\"" },
+          { "id": "b", "text": "#myForm=\"form\"" },
+          { "id": "c", "text": "#myForm=\"templateForm\"" },
+          { "id": "d", "text": "#myForm=\"formTemplate\"" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 252,
+        "question": "How do you bind an input with ngModel?",
+        "choices": [
+          { "id": "a", "text": "[(ngModel)]=\"property\"" },
+          { "id": "b", "text": "(ngModel)=\"property\"" },
+          { "id": "c", "text": "[ngModel]=\"property\"" },
+          { "id": "d", "text": "ngModel=\"property\"" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 253,
+        "question": "How do you name an input in a Template-driven form?",
+        "choices": [
+          { "id": "a", "text": "name=\"fieldName\"" },
+          { "id": "b", "text": "ngModelName=\"fieldName\"" },
+          { "id": "c", "text": "id=\"fieldName\"" },
+          { "id": "d", "text": "fieldName=\"name\"" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 254,
+        "question": "What is a validator?",
+        "choices": [
+          { "id": "a", "text": "A function to validate a form field" },
+          { "id": "b", "text": "A validation component" },
+          { "id": "c", "text": "A styling directive" },
+          { "id": "d", "text": "A validation pipe" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 255,
+        "question": "What are the built-in validators?",
+        "choices": [
+          { "id": "a", "text": "Validators.required, Validators.minLength, Validators.email, etc." },
+          { "id": "b", "text": "required, minLength, email, etc." },
+          { "id": "c", "text": "validateRequired, validateMin, etc." },
+          { "id": "d", "text": "Both first and second" }
+        ],
+        "answer": "d"
+      },
+      {
+        "id": 256,
+        "question": "How do you add a validator to a FormControl?",
+        "choices": [
+          { "id": "a", "text": "new FormControl('', Validators.required)" },
+          { "id": "b", "text": "new FormControl('', { required: true })" },
+          { "id": "c", "text": "new FormControl('', 'required')" },
+          { "id": "d", "text": "new FormControl('', validate: required)" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 257,
+        "question": "How do you add multiple validators?",
+        "choices": [
+          { "id": "a", "text": "Validators.compose([Validators.required, Validators.minLength(5)])" },
+          { "id": "b", "text": "[Validators.required, Validators.minLength(5)]" },
+          { "id": "c", "text": "Both first and second" },
+          { "id": "d", "text": "Validators.multiple(required, minLength)" }
+        ],
+        "answer": "c"
+      },
+      {
+        "id": 258,
+        "question": "What is an async validator?",
+        "choices": [
+          { "id": "a", "text": "A validator that performs async validation (e.g., API call)" },
+          { "id": "b", "text": "A background validator" },
+          { "id": "c", "text": "A deprecated validator" },
+          { "id": "d", "text": "A validator for async forms" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 259,
+        "question": "How do you create an async validator?",
+        "choices": [
+          { "id": "a", "text": "A function returning an Observable or Promise of ValidationErrors" },
+          { "id": "b", "text": "A function returning boolean" },
+          { "id": "c", "text": "A function returning string" },
+          { "id": "d", "text": "An async function returning boolean" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 260,
+        "question": "How do you add an async validator?",
+        "choices": [
+          { "id": "a", "text": "new FormControl('', null, myAsyncValidator)" },
+          { "id": "b", "text": "new FormControl('', myAsyncValidator)" },
+          { "id": "c", "text": "new FormControl('', { async: myAsyncValidator })" },
+          { "id": "d", "text": "new FormControl('', async: myAsyncValidator)" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 261,
+        "question": "How do you access FormControl errors?",
+        "choices": [
+          { "id": "a", "text": "control.errors" },
+          { "id": "b", "text": "control.getError" },
+          { "id": "c", "text": "control.validation" },
+          { "id": "d", "text": "control.hasErrors" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 262,
+        "question": "How do you check if a FormControl is valid?",
+        "choices": [
+          { "id": "a", "text": "control.valid" },
+          { "id": "b", "text": "control.isValid" },
+          { "id": "c", "text": "control.status === 'valid'" },
+          { "id": "d", "text": "Both first and second" }
+        ],
+        "answer": "d"
+      },
+      {
+        "id": 263,
+        "question": "How do you check if a form is valid?",
+        "choices": [
+          { "id": "a", "text": "form.valid" },
+          { "id": "b", "text": "form.isValid" },
+          { "id": "c", "text": "form.status === 'valid'" },
+          { "id": "d", "text": "Both first and second" }
+        ],
+        "answer": "d"
+      },
+      {
+        "id": 264,
+        "question": "What is a FormArray?",
+        "choices": [
+          { "id": "a", "text": "A FormGroup to manage an array of FormControls" },
+          { "id": "b", "text": "An array of forms" },
+          { "id": "c", "text": "A FormGroup with indexes" },
+          { "id": "d", "text": "A FormControl with multiple values" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 265,
+        "question": "How do you create a FormArray?",
+        "choices": [
+          { "id": "a", "text": "new FormArray([new FormControl('')])" },
+          { "id": "b", "text": "FormArray([new FormControl('')])" },
+          { "id": "c", "text": "createArray([new FormControl('')])" },
+          { "id": "d", "text": "new FormArray().add(new FormControl(''))" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 266,
+        "question": "How do you access a FormControl in a FormArray?",
+        "choices": [
+          { "id": "a", "text": "array.at(index)" },
+          { "id": "b", "text": "array.get(index)" },
+          { "id": "c", "text": "array[index]" },
+          { "id": "d", "text": "array.control(index)" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 267,
+        "question": "How do you add a control to a FormArray?",
+        "choices": [
+          { "id": "a", "text": "array.push(new FormControl(''))" },
+          { "id": "b", "text": "array.add(new FormControl(''))" },
+          { "id": "c", "text": "array.insert(new FormControl(''))" },
+          { "id": "d", "text": "array.append(new FormControl(''))" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 268,
+        "question": "How do you remove a control from a FormArray?",
+        "choices": [
+          { "id": "a", "text": "array.removeAt(index)" },
+          { "id": "b", "text": "array.delete(index)" },
+          { "id": "c", "text": "array.splice(index, 1)" },
+          { "id": "d", "text": "array.pop(index)" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 269,
+        "question": "How do you reset a form?",
+        "choices": [
+          { "id": "a", "text": "form.reset()" },
+          { "id": "b", "text": "form.clear()" },
+          { "id": "c", "text": "form.reinit()" },
+          { "id": "d", "text": "form.empty()" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 270,
+        "question": "How do you update a form with values?",
+        "choices": [
+          { "id": "a", "text": "form.patchValue(obj) or form.setValue(obj)" },
+          { "id": "b", "text": "form.update(obj)" },
+          { "id": "c", "text": "form.set(obj)" },
+          { "id": "d", "text": "form.populate(obj)" }
+        ],
+        "answer": "a"
+      }
+    ]
+  },
+  {
+    "category": "NG Modules",
+    "questionList": [
+      {
+        "id": 271,
+        "question": "What is an NgModule?",
+        "choices": [
+          { "id": "a", "text": "A container for grouping components, directives, pipes, and services" },
+          { "id": "b", "text": "A JavaScript module" },
+          { "id": "c", "text": "A root component" },
+          { "id": "d", "text": "A configuration file" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 272,
+        "question": "Which decorator is used to create an NgModule?",
+        "choices": [
+          { "id": "a", "text": "@NgModule" },
+          { "id": "b", "text": "@Module" },
+          { "id": "c", "text": "@NgModule" },
+          { "id": "d", "text": "@AppModule" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 273,
+        "question": "Which @NgModule property declares components?",
+        "choices": [
+          { "id": "a", "text": "declarations" },
+          { "id": "b", "text": "components" },
+          { "id": "c", "text": "imports" },
+          { "id": "d", "text": "exports" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 274,
+        "question": "Which property imports other modules?",
+        "choices": [
+          { "id": "a", "text": "imports" },
+          { "id": "b", "text": "requires" },
+          { "id": "c", "text": "modules" },
+          { "id": "d", "text": "include" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 275,
+        "question": "Which property exports public components/directives/pipes?",
+        "choices": [
+          { "id": "a", "text": "exports" },
+          { "id": "b", "text": "public" },
+          { "id": "c", "text": "shared" },
+          { "id": "d", "text": "expose" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 276,
+        "question": "Which property declares module providers?",
+        "choices": [
+          { "id": "a", "text": "providers" },
+          { "id": "b", "text": "services" },
+          { "id": "c", "text": "injectables" },
+          { "id": "d", "text": "dependencies" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 277,
+        "question": "What is the root module?",
+        "choices": [
+          { "id": "a", "text": "The main module bootstrapped in the application (usually AppModule)" },
+          { "id": "b", "text": "The first created module" },
+          { "id": "c", "text": "The root components module" },
+          { "id": "d", "text": "The standalone module" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 278,
+        "question": "Which @NgModule property indicates the root component?",
+        "choices": [
+          { "id": "a", "text": "bootstrap" },
+          { "id": "b", "text": "root" },
+          { "id": "c", "text": "entry" },
+          { "id": "d", "text": "main" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 279,
+        "question": "What is a Feature Module?",
+        "choices": [
+          { "id": "a", "text": "A module that groups a specific application feature" },
+          { "id": "b", "text": "A module with features" },
+          { "id": "c", "text": "A shared module" },
+          { "id": "d", "text": "A core module" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 280,
+        "question": "What is a Shared Module?",
+        "choices": [
+          { "id": "a", "text": "A module containing reusable components/directives/pipes" },
+          { "id": "b", "text": "A module shared between multiple apps" },
+          { "id": "c", "text": "A public module" },
+          { "id": "d", "text": "A global module" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 281,
+        "question": "What is a Core Module?",
+        "choices": [
+          { "id": "a", "text": "A module for singleton services and single-use components" },
+          { "id": "b", "text": "The app's central module" },
+          { "id": "c", "text": "The main module" },
+          { "id": "d", "text": "The base module" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 282,
+        "question": "Why is using a Core Module with providedIn: 'root' often redundant?",
+        "choices": [
+          { "id": "a", "text": "providedIn: 'root' automatically makes services singleton" },
+          { "id": "b", "text": "Core Modules are deprecated" },
+          { "id": "c", "text": "Services cannot be in Core Modules" },
+          { "id": "d", "text": "There's no reason" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 283,
+        "question": "What is BrowserModule?",
+        "choices": [
+          { "id": "a", "text": "The module required for browser applications" },
+          { "id": "b", "text": "A navigation module" },
+          { "id": "c", "text": "A forms module" },
+          { "id": "d", "text": "An HTTP module" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 284,
+        "question": "What is CommonModule?",
+        "choices": [
+          { "id": "a", "text": "A module with common directives (*ngIf, *ngFor, ngClass, etc.)" },
+          { "id": "b", "text": "A module of common components" },
+          { "id": "c", "text": "A module of shared services" },
+          { "id": "d", "text": "A global styles module" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 285,
+        "question": "What is RouterModule?",
+        "choices": [
+          { "id": "a", "text": "The routing module" },
+          { "id": "b", "text": "A routes module" },
+          { "id": "c", "text": "A navigation module" },
+          { "id": "d", "text": "A links module" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 286,
+        "question": "What is FormsModule?",
+        "choices": [
+          { "id": "a", "text": "The module for Template-driven forms" },
+          { "id": "b", "text": "A module for all forms" },
+          { "id": "c", "text": "A module for HTML forms" },
+          { "id": "d", "text": "A validation module" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 287,
+        "question": "What is ReactiveFormsModule?",
+        "choices": [
+          { "id": "a", "text": "The module for Reactive forms" },
+          { "id": "b", "text": "A module for validated forms" },
+          { "id": "c", "text": "A module for complex forms" },
+          { "id": "d", "text": "A module for validators" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 288,
+        "question": "What is HttpClientModule?",
+        "choices": [
+          { "id": "a", "text": "The HTTP requests module (obsolete in Angular 22, injected directly)" },
+          { "id": "b", "text": "A connections module" },
+          { "id": "c", "text": "An API module" },
+          { "id": "d", "text": "A fetch module" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 289,
+        "question": "Why is HttpClientModule obsolete?",
+        "choices": [
+          { "id": "a", "text": "Angular now provides HttpClient via provideHttpClient()" },
+          { "id": "b", "text": "HTTP is no longer used" },
+          { "id": "c", "text": "Modules are deprecated" },
+          { "id": "d", "text": "HttpClient is removed" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 290,
+        "question": "What is lazy loading with modules?",
+        "choices": [
+          { "id": "a", "text": "Loading a module only when needed" },
+          { "id": "b", "text": "Background module loading" },
+          { "id": "c", "text": "Loading all modules at startup" },
+          { "id": "d", "text": "Loading a module on user click" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 291,
+        "question": "How do you configure lazy loading with loadChildren?",
+        "choices": [
+          { "id": "a", "text": "loadChildren: () => import('./my-module').then(m => m.MyModule)" },
+          { "id": "b", "text": "lazy: true, module: './my-module'" },
+          { "id": "c", "text": "module: './my-module', lazy: true" },
+          { "id": "d", "text": "import: './my-module', lazy: true" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 292,
+        "question": "What is forRoot in a module?",
+        "choices": [
+          { "id": "a", "text": "A method to configure a module once in the root" },
+          { "id": "b", "text": "A method to import a module" },
+          { "id": "c", "text": "A method to export a module" },
+          { "id": "d", "text": "A deprecated method" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 293,
+        "question": "What is forChild in a module?",
+        "choices": [
+          { "id": "a", "text": "A method to use a module without reconfiguring it" },
+          { "id": "b", "text": "A method for child modules" },
+          { "id": "c", "text": "A method for lazy loading" },
+          { "id": "d", "text": "A method for feature modules" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 294,
+        "question": "What is NgModule in Angular standalone?",
+        "choices": [
+          { "id": "a", "text": "NgModules are optional, components can import dependencies directly" },
+          { "id": "b", "text": "NgModules are mandatory" },
+          { "id": "c", "text": "NgModules no longer exist" },
+          { "id": "d", "text": "NgModules are deprecated" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 295,
+        "question": "How do you import a directive in a standalone component?",
+        "choices": [
+          { "id": "a", "text": "In the imports of @Component" },
+          { "id": "b", "text": "In an NgModule" },
+          { "id": "c", "text": "In the constructor" },
+          { "id": "d", "text": "Directly in HTML" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 296,
+        "question": "What is a module with providers?",
+        "choices": [
+          { "id": "a", "text": "A module that provides services with a limited scope" },
+          { "id": "b", "text": "A module with global providers" },
+          { "id": "c", "text": "A module without providers" },
+          { "id": "d", "text": "A deprecated module" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 297,
+        "question": "Why is providedIn: 'root' recommended over providers?",
+        "choices": [
+          { "id": "a", "text": "Better tree-shakability and no NgModule needed" },
+          { "id": "b", "text": "Faster" },
+          { "id": "c", "text": "More secure" },
+          { "id": "d", "text": "Less code" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 298,
+        "question": "What is the difference between declarations and imports?",
+        "choices": [
+          { "id": "a", "text": "declarations declares the module's components, imports imports external modules" },
+          { "id": "b", "text": "There's no difference" },
+          { "id": "c", "text": "declarations imports, imports declares" },
+          { "id": "d", "text": "declarations is for services, imports for modules" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 299,
+        "question": "What is moduleId in a component?",
+        "choices": [
+          { "id": "a", "text": "A reference to the component's module for relative paths (deprecated)" },
+          { "id": "b", "text": "The module ID" },
+          { "id": "c", "text": "The module name" },
+          { "id": "d", "text": "The module path" }
+        ],
+        "answer": "a"
+      },
+      {
+        "id": 300,
+        "question": "Why are standalone components preferred over NgModules?",
+        "choices": [
+          { "id": "a", "text": "Less boilerplate, clearer structure, better tree-shakability" },
+          { "id": "b", "text": "Faster" },
+          { "id": "c", "text": "Less memory usage" },
+          { "id": "d", "text": "No bugs" }
+        ],
+        "answer": "a"
+      }
+    ]
+  }
+]
