@@ -16,14 +16,7 @@ export class TestGrid implements OnInit {
   choiceMap = new Map<number, string>();
   answerList: QuestionResult[] = [];
   result = 0;
-
-  allQuestions: QuizQuestionWithCategory[] = quizDataList.flatMap((cat: QuizCategory) =>
-    cat.questionList.map((q) => ({
-      ...q,
-      category: cat.category,
-      flag: signal(false),
-    })),
-  );
+  allQuestions: QuizQuestionWithCategory[] = [];
 
   ngOnInit(): void {
     this.reset();
@@ -31,6 +24,14 @@ export class TestGrid implements OnInit {
   }
 
   initTest() {
+    this.allQuestions = quizDataList.flatMap((cat: QuizCategory) =>
+      cat.questionList.map((q) => ({
+        ...q,
+        category: cat.category,
+        flag: signal(false),
+      })),
+    );
+
     const shuffled = this.allQuestions.sort(() => Math.random() - 0.5);
     this.selectedQuestions = shuffled
       .slice(0, 50)

@@ -1,0 +1,24 @@
+<h1>Different ways to use a defer</h1>
+<div class="defer-section">
+  @defer {
+    <app-hello-world></app-hello-world>
+  }
+  <!-- this will wait 2s before let the defer to display the component-->
+  @loading (minimum 2s) {
+    <b>Loading...</b>
+  }
+</div>
+<div class="defer-section">
+  @defer (on hover) {
+    <app-hello-world></app-hello-world>
+  } @placeholder {
+    <div>Hover me!</div>
+  }
+</div>
+<div class="defer-section">
+  <button #button>Click me</button>
+
+  @defer (on interaction(button)) {
+    <app-hello-world></app-hello-world>
+  }
+</div>
