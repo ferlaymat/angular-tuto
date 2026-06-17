@@ -52,3 +52,21 @@ export interface QuestionResult {
   question: string;
   answer: string;
 }
+
+export interface Person {
+  id: number;
+  lastName: string;
+  firstName: string;
+  city: string;
+}
+
+export interface Page<T> {
+  content: T[];
+  totalElements: number;
+  totalPages: number;
+  number: number; // page courante (0-based)
+  size: number;
+  first: boolean;
+  last: boolean;
+  numberOfElements: number;
+}
