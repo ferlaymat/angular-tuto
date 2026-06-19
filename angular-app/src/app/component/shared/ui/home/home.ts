@@ -5,7 +5,7 @@ import { Counter } from '../counter/counter';
 import { Person } from '../../model/Types';
 import { MatTableModule } from '@angular/material/table';
 import { HttpPersonService } from '../../service/http-person-service';
-import { catchError, debounceTime } from 'rxjs';
+import { catchError, debounceTime, filter } from 'rxjs';
 import { form, FormField } from '@angular/forms/signals';
 import { toObservable, toSignal } from '@angular/core/rxjs-interop';
 
@@ -21,6 +21,7 @@ export class Home implements OnInit {
   count = signal(3);
   firstName = 'Ada';
   initialCount = 18;
+  filter: any;
 
   ariaLabel = computed(() =>
     this.count() > 0 ? `${this.count()} notifications non lues` : `Aucune notification`,
@@ -49,16 +50,16 @@ export class Home implements OnInit {
 
   constructor() {
     effect(() => {
-      const filter = this.debouncedPersonFilter();
-      if (filter && (filter.lastName || filter.firstName || filter.city)) {
+      this.filter = this.debouncedPersonFilter();
+      if (this.filter) {
         this.updateDataSource(
           0,
           undefined,
           undefined,
           undefined,
-          filter.lastName,
-          filter.firstName,
-          filter.city,
+          this.filter.lastName,
+          this.filter.firstName,
+          this.filter.city,
         );
       }
     });
@@ -83,14 +84,30 @@ export class Home implements OnInit {
   NextPage() {
     if (this.currentPage() + 1 < this.nbPage()) {
       this.currentPage.update((p) => p + 1);
-      this.updateDataSource(this.currentPage());
+      this.updateDataSource(
+        this.currentPage(),
+        undefined,
+        undefined,
+        undefined,
+        this.filter.lastName,
+        this.filter.firstName,
+        this.filter.city,
+      );
     }
   }
 
   PreviousPage() {
     if (this.currentPage() - 1 >= 0) {
       this.currentPage.update((p) => p - 1);
-      this.updateDataSource(this.currentPage());
+      this.updateDataSource(
+        this.currentPage(),
+        undefined,
+        undefined,
+        undefined,
+        this.filter.lastName,
+        this.filter.firstName,
+        this.filter.city,
+      );
     }
   }
 
