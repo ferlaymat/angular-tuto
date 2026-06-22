@@ -74,13 +74,6 @@ export const routes: Routes = [
             (c) => c.TemplateDrivenForm,
           ),
       },
-      {
-        path: 'signal',
-        pathMatch: 'prefix',
-        title: `${appName}Signal Form`,
-        loadComponent: () =>
-          import('./component/form/signal-form/signal-form').then((c) => c.SignalForm),
-      },
     ],
   },
 ];
